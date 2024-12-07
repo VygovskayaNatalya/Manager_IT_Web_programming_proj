@@ -1,0 +1,47 @@
+﻿@model FinancialAnalysis.Models.RegisterViewModel
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация в Финансовом Приложении</title>
+    <link rel="stylesheet" href="~/css/loginStyle.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-container">
+            <img src="~/images/logo.png" alt="Logo Icon" style="width:35px;height:35px;margin-right:10px;">
+            <h2>Регистрация</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1354/1354960.png" alt="Money Icon" class="money-icon">
+        </div>
+
+        <form asp-action="Register" method="post">
+            <div>
+                <input asp-for="Username" placeholder="Введите логин" required/>
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div>
+                <input asp-for="Email" placeholder="Введите email" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div>
+                <input asp-for="Password" type="password" placeholder="Введите пароль" required />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div>
+                <input asp-for="ConfirmPassword" type="password" placeholder="Подтвердите пароль" required />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <div class="register-link">
+            <a href="@Url.Action("Login", "Account")">Уже есть аккаунт? Войти</a>
+        </div>
+    </div>
+
+</body>
+</html>

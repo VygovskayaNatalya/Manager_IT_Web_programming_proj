@@ -1,0 +1,112 @@
+﻿
+button {
+    background-color: white;
+    color: white;
+}
+
+    button:hover {
+        background-color: white;
+    }
+
+h1 {
+    text-align: center;
+    color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 70px;
+    height: 70px;
+    margin: 5px auto;
+    border-radius: 50%;
+}
+
+.card-text {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    flex: auto;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.my-add-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+    .my-add-button img {
+        width: 30px;
+        height: 30px;
+    }
+
+.edit-button {
+    width: 25px; 
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+    margin: 0; 
+}
+
+    .edit-button img {
+        width: 25px; 
+        height: 25px; 
+        display: block;
+    }
+
+.report-button {
+    width: 150px; 
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .report-button:hover {
+        background-color: #0056b3;
+    }
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .card-deck .card {
+        flex: 1 1 calc(48% - 10px);
+        margin: 5px;
+        min-width: 150px;
+    }
+

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<FinancialAnalysis.Models.Category>
+@Html.AntiForgeryToken()
+@{
+    ViewData["Title"] = "Категории";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/mainStyle.css" />
+<link rel="stylesheet" href="~/css/categoriesStyle.css" />
+
+
+<div class="my-container">
+
+    @await Html.PartialAsync("AdminMenu")
+
+    <h1>
+        Категории
+        <form method="get" action="@Url.Action("CreateReport", "Admin")" class="add-button">
+            <button type="submit" class="report-button" title="Создать отчет">
+                Создать отчёт
+            </button>
+        </form>
+    </h1>
+
+    <div class="row">
+        @foreach (var categoryType in Model.GroupBy(c => c.CategoryType))
+        {
+            <div class="col-md-12 mb-4">
+                <h2>
+                    @categoryType.Key?.TypeName
+                    <form method="post" action="@Url.Action("Create", "Admin", new { categoryTypeId = categoryType.Key.CategoryTypeId })" class="my-add-button">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="my-add-button">
+                            <img src="~/images/add-icon.png" alt="Добавить" />
+                        </button>
+                    </form>
+                </h2>
+                <div class="card-deck">
+                    @foreach (var category in categoryType)
+                    {
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="head" style="display: flex; flex-direction: row;">
+                                <p class="card-text">
+                                    ID: @category.CategoryId
+                                        <form method="get" action="@Url.Action("Edit", "Admin", new { id = category.CategoryId })" class="edit-button-form" style="display:contents;">
+                                        <button type="submit" class="edit-button" style="width:35px; height:30px; background-color:white; border-color:white">
+                                            <img style="width:25px; height:25px;" src="~/images/edit-icon.png" alt="Редактировать" />
+                                        </button>
+                                    </form>
+                                </p>
+                                </div>
+                                <h5 style ="margin-top:0px;" class="card-title">@category.Name</h5>
+                                <img src="@category.ImageUrl" class="card-img-top" alt="@category.Name" />
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

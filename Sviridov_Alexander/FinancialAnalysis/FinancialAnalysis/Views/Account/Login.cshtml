@@ -1,0 +1,36 @@
+﻿@model FinancialAnalysis.Models.LoginViewModel
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в Финансовое Приложение</title>
+    <link rel="stylesheet" href="~/css/loginStyle.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-container">
+            <img src="~/images/logo.png" alt="Logo Icon" style="width:35px;height:35px;margin-right:10px;">
+            <h2>Вход</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1354/1354960.png" alt="Money Icon" class="money-icon">
+        </div>
+
+        <form asp-action="Login" method="post">
+            <div>
+                <input asp-for="Username" placeholder="Введите логин" required/>
+            </div>
+            <div>
+                <input asp-for="Password" type="password" placeholder="Введите пароль" required/>
+            </div>
+            <button type="submit">Войти</button>
+        </form>
+
+        <div class="register-link">
+            <a href="@Url.Action("Register", "Account")">Нет аккаунта? Зарегистрироваться</a>
+        </div>
+    </div>
+
+</body>
+</html>

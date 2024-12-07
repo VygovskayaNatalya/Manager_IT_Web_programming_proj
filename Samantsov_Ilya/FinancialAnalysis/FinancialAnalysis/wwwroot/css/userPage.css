@@ -1,0 +1,134 @@
+﻿button {
+    background-color: white;
+    color: white;
+}
+
+    button:hover {
+        background-color: white;
+    }
+
+.date {
+    display: block; 
+    margin-top: 5px; 
+    font-size: 0.9em; 
+    color: #6c757d; 
+}
+
+.add-button {
+    position: absolute;
+    right: 20px;
+    top: 10px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+    .add-button img {
+        width: 30px; 
+        height: 30px; 
+    }
+
+.logout-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+    .logout-button img {
+        width: 30px;
+        height: 30px;
+    }
+
+h2 {
+    margin-top: 20px;
+    color: #343a40;
+    display: flex; 
+    align-items: center; 
+}
+
+.chart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+    .chart-button img {
+        width: 25px; 
+        height: 25px; 
+    }
+
+.item-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .item-list li {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+        .item-list li:last-child {
+            border-bottom: none;
+        }
+
+.category-image {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 70%;
+}
+
+.category-info {
+    display: flex;
+    flex-direction: column;
+}
+
+    .category-info span:first-child {
+        color: #000;
+        font-weight: bold;
+    }
+
+.amount {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+    .delete-button img {
+        width: 23px; 
+        height: 23px; 
+    }
+
+.no-items {
+    text-align: center;
+    color: #6c757d;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.overall-summary {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}

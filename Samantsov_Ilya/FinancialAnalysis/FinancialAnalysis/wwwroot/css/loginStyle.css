@@ -1,0 +1,116 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #343a40;
+    background-image: url('/images/siteBackgroungImg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 360px;
+    text-align: center;
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #343a40;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+    input:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .register-link a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+.validation-summary-errors {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin: 15px 0; 
+    border-radius: 5px;
+    text-align: left; 
+}
+
+.text-danger {
+    color: #dc3545; 
+}
+
+.money-icon {
+    width: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; 
+justify-content: center; 
+margin-bottom: 20px;
+}

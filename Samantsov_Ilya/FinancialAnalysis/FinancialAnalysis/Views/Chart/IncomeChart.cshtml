@@ -1,0 +1,76 @@
+﻿@model FinancialAnalysis.Models.ChartViewModel
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>График доходов и расходов</title>
+    <link rel="stylesheet" href="~/css/mainStyle.css" />
+    <link rel="stylesheet" href="~/css/chartPageStyle.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+</head>
+<body>
+
+    <div class="my-container">
+        @await Html.PartialAsync("UserMenu")
+
+        <h1>График доходов</h1>
+
+        <h2>Разбивка по категориям</h2>
+        <canvas id="categoryChart"></canvas>
+        <div class="button-container">
+            <button class="back-button" onclick="window.history.back();">Назад</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+        const ctxCategory = document.getElementById('categoryChart').getContext('2d');
+
+        const categoryData = {
+            labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Incomes.Select(i => i.Category.Name).Distinct().ToList())),
+            datasets: [{
+                label: 'Доходы',
+                data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Incomes.GroupBy(i => i.Category.Name).Select(g => g.Sum(i => i.Amount)).ToList())),
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.6)',
+                    'rgba(153, 102, 255, 0.6)',
+                    'rgba(255, 159, 64, 0.6)',
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        const categoryChart = new Chart(ctxCategory, {
+            type: 'pie',
+            data: categoryData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        align: 'start', 
+                        labels: {
+                            boxWidth: 20, 
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Категории'
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

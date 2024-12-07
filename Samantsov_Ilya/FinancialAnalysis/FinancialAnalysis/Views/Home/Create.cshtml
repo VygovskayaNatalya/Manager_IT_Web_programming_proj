@@ -1,0 +1,92 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model FinancialAnalysis.Models.CreateTransactionViewModel
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить запись</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/mainStyle.css" />
+    <link rel="stylesheet" href="~/css/addTransaction.css" />
+
+</head>
+<body>
+
+    <div class="my-container">
+        @await Html.PartialAsync("UserMenu")
+
+        <h1>Добавить запись</h1>
+        <form asp-action="Create" id="createTransactionForm" method="post">
+            <div class="form-group">
+                <label>Тип транзакции</label>
+                <select asp-for="IsIncome" class="form-control" id="transactionType">
+                    <option value="true">Доход</option>
+                    <option value="false">Расход</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CategoryId">Категория</label>
+                <select asp-for="CategoryId" class="form-control" id="categorySelect"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Amount">Сумма</label>
+                <input asp-for="Amount" class="form-control" type="number" step="0.01" min="0" required />
+                <span class="text-danger" asp-validation-for="Amount"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description">Описание</label>
+                <input asp-for="Description" class="form-control"/>
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Date">Дата</label>
+                <input asp-for="Date" class="form-control" type="date" required value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span class="text-danger" asp-validation-for="Date"></span>
+            </div>
+
+            <button type="submit" style ="background-color:green" class="btn btn-primary btn-block submit-button">Сохранить</button>
+        </form>
+    </div>
+
+    <script>
+        const transactionType = document.getElementById("transactionType");
+        const categorySelect = document.getElementById("categorySelect");
+
+        const incomeCategories = @Html.Raw(Json.Serialize(Model.IncomeCategories.Select(c => new { Value = c.Value, Text = c.Text })));
+        const expenseCategories = @Html.Raw(Json.Serialize(Model.ExpenseCategories.Select(c => new { Value = c.Value, Text = c.Text })));
+
+        function populateCategories(isIncome) {
+            categorySelect.innerHTML = ''; 
+            const categories = isIncome ? incomeCategories : expenseCategories;
+
+            categories.forEach(category => {
+                const option = document.createElement("option");
+                option.value = category.value;
+                option.text = category.text;
+                categorySelect.appendChild(option);
+            });
+        }
+
+        populateCategories(transactionType.value === "true");
+
+        transactionType.addEventListener('change', () => {
+            populateCategories(transactionType.value === "true");
+        });
+
+        document.getElementById('createTransactionForm').addEventListener('submit', function (event) {
+
+                alert("Добавлена новая запись");
+            
+        });
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

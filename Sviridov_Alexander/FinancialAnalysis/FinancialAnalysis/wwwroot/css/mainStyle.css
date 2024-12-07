@@ -1,0 +1,36 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 20px;
+    background-image: url('/images/siteBackgroungImg.jpg');
+    background-size: cover;
+}
+
+.my-container {
+    max-width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: green; 
+    position: relative; 
+}
+
+button {
+    background-color: green;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

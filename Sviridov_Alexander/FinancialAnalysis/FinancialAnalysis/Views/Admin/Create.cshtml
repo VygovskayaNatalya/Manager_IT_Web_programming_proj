@@ -1,0 +1,52 @@
+﻿@model FinancialAnalysis.Models.CreateCategoryViewModel
+@{
+    ViewData["Title"] = "Создать категорию";
+}
+
+
+<link rel="stylesheet" href="~/css/mainStyle.css" />
+<link rel="stylesheet" href="~/css/createCategoryStyle.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+
+<div class="my-container">
+    @await Html.PartialAsync("AdminMenu")
+    <h1>Создать новую категорию</h1>
+
+    <form id="createCategoryForm" asp-action="Create" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken() 
+        <input type="hidden" name="IsIncome" value="@Model.CategoryTypeId" />
+
+        <div class="my-form-group">
+            <label asp-for="CategoryTypeId">Тип категории</label>
+            <select asp-for="CategoryTypeId" asp-items="ViewBag.CategoryTypes" class="form-control" required>
+                <option value="">-- Выберите тип категории --</option>
+            </select>
+        </div>
+
+        <div class="my-form-group">
+            <label asp-for="CategoryName">Название категории</label>
+            <input asp-for="CategoryName" class="form-control" placeholder="Введите название категории" required />
+        </div>
+
+        <div class="my-form-group">
+            <label>Выберите изображение</label>
+            <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" required/>
+        </div>
+
+        <button type="submit" class="btn btn-success">Создать категорию</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('createCategoryForm').addEventListener('submit', function (event) {
+        var categoryType = document.querySelector('select[name="CategoryTypeId"]').value;
+        var categoryName = document.querySelector('input[name="CategoryName"]').value;
+        var imageFile = document.getElementById('ImageFile').files.length;
+
+        if (!categoryType || !categoryName || imageFile === 0) {
+            event.preventDefault();
+            //alert("Пожалуйста, заполните все обязательные поля и выберите изображение.");
+        }
+    });
+</script>

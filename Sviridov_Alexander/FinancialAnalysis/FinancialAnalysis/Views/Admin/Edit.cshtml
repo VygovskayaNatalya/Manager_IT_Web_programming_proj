@@ -1,0 +1,46 @@
+﻿@model FinancialAnalysis.Models.EditCategoryViewModel
+
+<link rel="stylesheet" href="~/css/mainStyle.css" />
+<link rel="stylesheet" href="~/css/editStyle.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+<div class="my-container">
+    @await Html.PartialAsync("AdminMenu")
+    <h1>Редактировать категорию</h1>
+
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <input type="hidden" asp-for="CategoryId" />
+
+        <div class="form-group">
+            <label asp-for="CategoryName">Название категории</label>
+            <input asp-for="CategoryName" class="form-control" required />
+            <span asp-validation-for="CategoryName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CategoryTypeId">Тип категории</label>
+            <select asp-for="CategoryTypeId" asp-items="ViewBag.CategoryTypes" class="form-control"></select>
+            <span asp-validation-for="CategoryTypeId" class="text-danger"></span>
+        </div>
+        <label asp-for="CurrentImageUrl">Текущее изображение:</label>
+        <input type="hidden" asp-for="CurrentImageUrl"/>
+        <div class="form-group">
+
+            @if (!string.IsNullOrEmpty(Model.CurrentImageUrl))
+            {
+                <img src="@Model.CurrentImageUrl" alt="Текущее изображение" class="img-thumbnail" style="max-width: 100px; max-height: 100px;" />
+            }
+        </div>
+
+        <div class="form-group">
+            <label>Загрузить новое изображение</label>
+            <input type="file" asp-for="ImageFile" class="form-control-file" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Сохранить</button>
+    </form>
+
+    <a href="@Url.Action("Categories")" class="btn btn-secondary mt-3">Назад к категориям</a>
+</div>
+

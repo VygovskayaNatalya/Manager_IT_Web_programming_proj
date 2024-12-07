@@ -1,0 +1,25 @@
+﻿canvas {
+    display: block;
+    margin: 0 auto;
+    width: 400px !important;
+    height: 400px !important;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.back-button:hover {
+    background-color: darkgreen;
+}

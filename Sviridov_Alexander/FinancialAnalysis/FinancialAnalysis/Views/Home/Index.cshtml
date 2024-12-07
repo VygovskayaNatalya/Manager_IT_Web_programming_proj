@@ -1,0 +1,133 @@
+﻿@model FinancialAnalysis.Models.HomeViewModel
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="~/css/mainStyle.css" />
+    <link rel="stylesheet" href="~/css/userPage.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+</head>
+<body>
+
+    <div class="my-container">
+
+        @await Html.PartialAsync("UserMenu")
+
+        <h1>
+            Финансовый обзор
+            <form method="get" action="@Url.Action("Create", "Home")" class="add-button">
+                <button type="submit" class="add-button">
+                    <img src="~/images/add-icon.png" alt="Добавить" />
+                </button>
+            </form>
+        </h1>
+
+        <h2>
+            Доходы
+            <form method="get" action="@Url.Action("IncomeChart", "Chart")" class="chart-button">
+                <button type="submit" class="chart-button">
+                    <img src="~/images/chart-icon.png" alt="Просмотр графика" />
+                </button>
+            </form>
+        </h2>
+        @if (Model.Incomes.Any())
+        {
+            <ul class="item-list">
+                @foreach (var income in Model.Incomes)
+                {
+                    <li>
+                        @if (income.Category != null && !string.IsNullOrEmpty(income.Category.ImageUrl))
+                        {
+                            <img src="@income.Category.ImageUrl" alt="@income.Category.Name" class="category-image" />
+                        }
+                        <div class="category-info">
+                            <span>@income.Category.Name</span>
+                            <span>@income.Description</span>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; align-items: flex-end; margin-left: auto;">
+                            <span class="amount">@income.Amount ₽</span>
+                            <span class="date">@income.Date.ToShortDateString()</span> 
+                        </div>
+
+                        <form method="post" action="@Url.Action("DeleteIncome", "Home")">
+                            <input type="hidden" name="id" value="@income.IncomeId" />
+                            <button type="submit" class="delete-button">
+                                <img src="~/images/delete-icon.png" alt="Удалить" />
+                            </button>
+                        </form>
+                    </li>
+                }
+            </ul>
+            <div class="total">Итого: @Model.Incomes.Sum(i => i.Amount) ₽</div>
+        }
+        else
+        {
+            <p class="no-items">Нет доходов для отображения.</p>
+        }
+
+        <h2>
+            Расходы
+            <form method="get" action="@Url.Action("ExpenceChart", "Chart")" class="chart-button">
+                <button type="submit" class="chart-button">
+                    <img src="~/images/chart-icon.png" alt="Просмотр графика" />
+                </button>
+            </form>
+        </h2>
+        @if (Model.Expenses.Any())
+        {
+            <ul class="item-list">
+                @foreach (var expense in Model.Expenses)
+                {
+                    <li>
+                        @if (expense.Category != null && !string.IsNullOrEmpty(expense.Category.ImageUrl))
+                        {
+                            <img src="@expense.Category.ImageUrl" alt="@expense.Category.Name" class="category-image" />
+                        }
+                        <div class="category-info">
+                            <span>@expense.Category.Name</span>
+                            <span>@expense.Description</span>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; align-items: flex-end; margin-left: auto;">
+                            <span class="amount">@expense.Amount ₽</span>
+                            <span class="date">@expense.Date.ToShortDateString()</span> 
+                        </div>
+
+                        <form method="post" action="@Url.Action("DeleteExpense", "Home")">
+                            <input type="hidden" name="id" value="@expense.ExpenseId" />
+                            <button type="submit" class="delete-button">
+                                <img src="~/images/delete-icon.png" alt="Удалить" />
+                            </button>
+                        </form>
+                    </li>
+                }
+            </ul>
+            <div class="total">Итого: @Model.Expenses.Sum(e => e.Amount) ₽</div>
+        }
+        else
+        {
+            <p class="no-items">Нет расходов для отображения.</p>
+        }
+
+        @{
+            var totalIncome = Model.Incomes.Sum(i => i.Amount);
+            var totalExpense = Model.Expenses.Sum(e => e.Amount);
+            var balance = totalIncome - totalExpense;
+        }
+
+        <div class="overall-summary">
+            <span>Общий итог:</span>
+            <span style="color: @(balance >= 0 ? "green" : "red")">@balance ₽</span>
+        </div>
+    </div>
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

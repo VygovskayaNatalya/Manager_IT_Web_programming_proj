@@ -1,0 +1,46 @@
+﻿.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold; 
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ced4da;
+    border-radius: 5px; 
+}
+
+input[type="file"] {
+    padding: 10px; 
+}
+
+.img-thumbnail {
+    margin-top: 10px;
+    border: 1px solid #ced4da; 
+    border-radius: 5px; 
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: green;
+}
+
+.btn-success {
+    background-color: green;
+    color: white;
+}
+
+.btn-secondary {
+    font-weight: bold;
+    color: black;
+}
+
+.btn:hover {
+    opacity: 0.9; 
+}
