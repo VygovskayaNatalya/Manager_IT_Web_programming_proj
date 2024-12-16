@@ -1,0 +1,1311 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+/*_Макет-Верх_________________________________________________________________*/
+
+.ColumConteinerLayot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+.LineConteinerLayotWhite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    padding-left: 8%;
+    position: relative;
+    gap: 5%;
+    background-color: rgb(246, 246, 246);
+}
+
+
+.ColumToLineConteinerLayotWhite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 2%;
+    margin: 0%;
+    gap: 0px;
+    position: relative;
+    height: 100%;
+    background-color: rgb(246, 246, 246);
+    position: relative;
+}
+
+.LineConteinerLayotRed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(200, 0, 0);
+    padding-left: 8%;
+    justify-content: flex-start;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ColumToLineConteinerLayotRed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 2%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ColumToLineConteinerLayotRed:hover {
+    background-color: rgb(160, 0, 0);
+}
+
+.my-button {
+    width: 12%;
+    height: 60%;
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    right: 8%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.my-button-Sell-Auto {
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 35%;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 12%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Autorithation {
+    align-content: center;
+    justify-content: center;
+    width: 3%;
+    height: 35%;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 8%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.my-button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.my-button-Enter-Autorithation {
+    align-content: center;
+    justify-content: center;
+    height: 5vh;
+    background-color: rgb(246, 246, 246);
+    border: none;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.my-button-Enter-Autorithation2 {
+    align-content: center;
+    justify-content: center;
+    height: 5vh;
+    width: 20vh;
+    background-color: rgb(209, 0, 0);
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/*_Основа_________________________________________________________________*/
+.ColumConteinerMain {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+/*_Макет-Низ_________________________________________________________________*/
+
+.ConteinerDowmColum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: absolute, fixed;
+    bottom: 0;
+    background-color: rgb(200, 0, 0);
+    width: 100%;
+    height: 60vh;
+    white-space: nowrap;
+    margin: 0%;
+    padding: 0%;
+}
+
+.LineWhite {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    height: 25%;
+    gap: 2%;
+    white-space: nowrap;
+}
+
+.btn_Phone {
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 40%;
+    background-color: rgb(255, 193, 7);
+    border: none;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn_Phone:hover {
+        background-color: rgb(245, 183, 7);
+}
+
+.LineGray {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    height: 25%;
+    gap: 5%;
+    white-space: nowrap;
+    box-shadow: inset 0px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.ColumToLineConteinerLayotGray {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 2%;
+    margin: 0%;
+    gap: 0px;
+    position: relative;
+    height: 100%;
+    position: relative;
+}
+
+.LineDarkGray {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    width: 100%;
+    height: 40%;
+    gap: 10%;
+    white-space: nowrap;
+}
+
+.LineDarkGrayDay {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+    gap: 2%;
+    white-space: nowrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.LineDarkGrayMess {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 30%;
+    gap: 5%;
+    white-space: nowrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.Day {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    border-radius: 2px;
+    width: 13%;
+    height: 100%;
+}
+
+.DayDark {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    border-radius: 2px;
+    width: 13%;
+    height: 100%;
+}
+
+.ColumToLineConteinerLayotDarkGray {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    width: fit-content;
+    padding: 2%;
+    margin: 0%;
+    gap: 0px;
+    position: relative;
+    height: 100%;
+    position: relative;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+    width: 100%;
+    height: 10%;
+    white-space: nowrap;
+}
+
+/*Модальное_Окно_________________________________________________________________*/
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный фон */
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+/* Стиль для кнопки закрытия */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+    }
+
+.close2 {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+    .close2:hover,
+    .close2:focus {
+        color: black;
+        text-decoration: none;
+    }
+
+.tab {
+    display: none; /* Скрыто по умолчанию */
+}
+
+.active {
+    display: block; /* Показать активный таб */
+}
+
+/*Index-Page_________________________________________________________________*/
+
+.ColumConteinerMainIndex {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    height: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.ColumConteinerMainIndex-Wite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.imgBMW {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute; /* Абсолютное позиционирование для наложения */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
+    backdrop-filter: blur(5px); /* Размытие фона */
+    pointer-events: none; /* Позволяем взаимодействовать с элементами под наложением */
+}
+
+.Line {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+    width: 100%;
+    height: 20%;
+}
+
+.my-button-main {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1%;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    right: 12%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.GrayBTN {
+    background-color: rgb(216, 216, 216);
+}
+
+.GrayBTN:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+.RedBTN {
+    background-color: rgb(200, 0, 0);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.RedBTN:hover {
+    background-color: rgb(140, 0, 0);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.Upper {
+    z-index: 1;
+}
+
+.Main-Line {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-start;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    gap: 5%;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.shadow {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-inset {
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Main-Line-Start {
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    gap: 5%;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.Main-Line-Without-Pading {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-start;
+    gap: 5%;
+    width: 100%;
+    position: relative;
+}
+
+.ColumForBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+    width: 23%;
+    position: relative;
+}
+
+.ColumForSellAuto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1vh;
+    width: 21%;
+    position: relative;
+}
+
+.Line-For-InfoCar {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+    position: relative;
+}
+
+.LineForAbsolut {
+    display: flex;
+    width: 35vh;
+    height: 5vh;
+    position: relative;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.Marka-Abs {
+    position: absolute;
+    left: 0;
+}
+
+.Marka-Count-Abs {
+    position: absolute;
+    right: 0;
+}
+
+.Line-1px {
+    display: flex;
+    width: 80%;
+    height: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.my-input{
+    width: 100%;
+    height: 5vh;
+}
+
+.my-button-Serch {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(110, 221, 90);
+    border: none;
+    right: 12%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0px 0 35px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.my-button-Delete {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(200, 0, 0);
+    border: none;
+    right: 12%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0px 0 35px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.my-button-Delete:hover {
+    background-color: rgb(150, 0, 0);
+}
+
+.my-button-Serch:hover {
+    background-color: rgb(90, 201, 70);
+}
+
+.no-bullets {
+    list-style-type: none; /* Убираем выделитель */
+    padding: 0; /* Убираем отступы по умолчанию */
+    margin: 0; /* Убираем внешние отступы по умолчанию */
+}
+
+.ColumHowSell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding: 5%;
+    width: 30%;
+    height: 33vh;
+    margin: 0%;
+    position: relative;
+    background-color: rgb(252, 252, 252);
+}
+/*_Privacy_________________________________________________________________*/
+.Line-Logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+/*    border: 1px solid rgba(0, 0, 0, 0.5);*/
+    width: 100%;
+    position: relative;
+}
+
+justify-content-center {
+    justify-content: center;
+}
+
+justify-content-right {
+    justify-content: right;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.margin5 {
+    margin: 5%;
+}
+
+.margin-left0 {
+    margin-left: 0%;
+}
+
+.margin-right0 {
+    margin-right: 0%;
+}
+
+.margin-right5 {
+    margin-right: 15%;
+}
+.margin-top0 {
+    margin-top: 0%;
+}
+
+.margin-top2 {
+    margin-top: 2%;
+}
+.margin-top3 {
+    margin-top: 3%;
+}
+
+.margin-top5 {
+    margin-top: 5%;
+}
+.margin-bottom0 {
+    margin-bottom: 0%;
+}
+.margin-bottom1 {
+    margin-bottom: 1%;
+}
+.margin-bottom3 {
+    margin-bottom: 3%;
+}
+
+.margin-bottom5 {
+    margin-bottom: 5%;
+}
+.padding-left6 {
+    padding-left: 6%;
+}
+.padding-left7 {
+    padding-left: 7%;
+}
+.padding-left0 {
+    padding-left: 0%;
+}
+
+.padding-right0 {
+    padding-right: 0%;
+}
+
+.padding-right5 {
+    padding-right: 1%;
+}
+
+
+.padding-bottom0 {
+    padding-bottom: 0%;
+}
+
+.padding-bottom1 {
+    margin-bottom: 1%;
+}
+
+.padding-top0 {
+    padding-top: 0%;
+}
+
+.padding-top1 {
+    padding-top: 5%;
+}
+.gap0 {
+    gap: 0%;
+}
+
+.gap3 {
+    gap: 3%;
+}
+.gap5 {
+    gap: 5%;
+}
+
+.gap6 {
+    gap: 6%;
+}
+
+.gap10 {
+    gap: 10%;
+}
+
+.border-radius20 {
+    border-radius: 20px;
+}
+
+.ColumForBtnPrivacy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+    width: 45vh;
+    position: relative;
+}
+
+.ColumConteiner {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+/*    border: 1px solid rgba(0, 0, 0, 0.5);*/
+}
+
+.Line-1pxPrivacy {
+    display: flex;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Line-CarBy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: 3%;
+/*    border: 1px solid rgba(0, 0, 0, 0.5);*/
+    width: 100%;
+    position: relative;
+}
+
+.right-align {
+    text-align: right; /* Выровнять текст по правой стороне */
+}
+
+.width100 {
+    width: 100%;
+}
+.width80 {
+    width: 78%;
+}
+.width75 {
+    width: 75%;
+}
+.width70 {
+    width: 70%;
+}
+
+.width60 {
+    width: 60%;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.width40 {
+    width: 40%;
+}
+.width30 {
+    width: 30%;
+}
+
+.width29 {
+    width: 29%;
+}
+
+.width20 {
+    width: 20%;
+}
+.width25 {
+    width: 25%;
+}
+.width40vh {
+    width: 40vh;
+}
+
+.width60vh {
+    width: 75vh;
+}
+.width35vh {
+    width: 35vh;
+}
+
+.width25vh {
+    width: 30vh;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.height20vh {
+    height: 20vh;
+}
+
+.height50vh {
+    height: 50vh;
+}
+
+/*_SeeCar_________________________________________________________________*/
+.ColumLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    height: 70%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.ColumCall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding: 5%;
+    margin-top: 5%;
+    position: relative;
+}
+
+.ColumCall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding: 5%;
+    margin-top: 5%;
+    position: relative;
+}
+
+.ColumCall2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding: 3%;
+    gap: 5%;
+    background-color: rgb(246, 246, 246);
+    width: 80vh;
+    height: 50vh;
+    position: relative;
+}
+
+/*_Cobinet_________________________________________________________________*/
+.LineInfoName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(256, 256, 256);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5%;
+    position: relative;
+}
+
+.border-radius5 {
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+/*_input_________________________________________________________________*/
+.input-container {
+    position: relative;
+    margin: 5px 0;
+}
+
+.input {
+    width: 117%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+    .input:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+
+.input-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: #999;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.input:focus + .input-label,
+.input:not(:placeholder-shown) + .input-label {
+    top: -15px;
+    left: 10px;
+    font-size: 12px;
+    color: #007BFF;
+}
+
+.file-upload {
+    display: none; /* Скрываем стандартный input */
+}
+
+.file-upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Синий цвет */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .file-upload-label:hover {
+        background-color: #0056b3; /* Более тёмный синий при наведении */
+    }
+/*_Шрифты_________________________________________________________________*/
+.flex-item {
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%; /* Отступы между элементами */
+}
+
+.flex-item-500 {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%; /* Отступы между элементами */
+}
+
+.flex-item-400 {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%; /* Отступы между элементами */
+}
+
+.flex-item-300 {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%; /* Отступы между элементами */
+}
+
+.White-1vw {
+    color: rgb(255, 255, 255); /* Цвет текста */
+    font-size: 1vw;
+}
+
+.White-1-3vw {
+    color: rgb(255, 255, 255); /* Цвет текста */
+    font-size: 1.3vw;
+}
+
+.White-2vw {
+    color: rgb(255, 255, 255); /* Цвет текста */
+    font-size: 2vw;
+}
+
+.White-08vw {
+    color: rgb(145, 145, 145); /* Цвет текста */
+    font-size: 0.8vw;
+    margin: 0%;
+}
+
+.Black-095vw {
+    color: rgb(47, 47, 47); /* Цвет текста */
+    font-size: 0.95vw;
+    margin: 0%;
+}
+
+.Black-08vw {
+    color: rgb(0, 0, 0); /* Цвет текста */
+    font-size: 0.8vw;
+    margin: 0%;
+}
+
+.Black-1vw {
+    color: rgb(0, 0, 0); /* Цвет текста */
+    font-size: 1vw;
+    margin: 0%;
+    padding: 0%;
+}
+
+.Black-1vw-hover {
+    color: rgb(0, 0, 0); /* Цвет текста */
+    font-size: 1vw;
+    margin: 0%;
+    padding: 0%;
+}
+
+.Black-1vw-hover:hover{
+    color: rgb(123, 0, 0);
+}
+
+.Black-2vw {
+    color: rgb(0, 0, 0); /* Цвет текста */
+    font-size: 2vw;
+}
+
+.Black-1-5vw {
+    color: rgb(0, 0, 0); /* Цвет текста */
+    font-size: 1.5vw;
+}
+
+.Black-Lite-1-5vw {
+    color: rgb(67, 67, 67); /* Цвет текста */
+    font-size: 1.5vw;
+    margin: 0%;
+}
+
+
+.Red-1vw {
+    color: rgb(200, 0, 0); /* Цвет текста */
+    font-size: 1vw;
+    margin: 0%;
+}
+
+.Red-1-5vw {
+    color: rgb(200, 0, 0); /* Цвет текста */
+    font-size: 1.5vw;
+    margin: 0%;
+}
+
+.Red-1vw:hover {
+     color: rgb(94, 0, 0);
+     cursor: pointer;
+}
+
+.Gray-1vw {
+    color: rgba(128, 128, 128); /* Цвет текста */
+    font-size: 1vw;
+}
+
+.Gray-08vw {
+    color: rgba(128, 128, 128); /* Цвет текста */
+    font-size: 0.8vw;
+}
+
+.LightGray-1vw {
+    color: rgb(220, 220, 220); /* Цвет текста */
+    font-size: 1vw;
+}
+
+.Gray-075vw {
+    color: rgba(128, 128, 128); /* Цвет текста */
+    font-size: 0.75vw;
+}
+
+.Gray-085vw {
+    color: rgba(128, 128, 128); /* Цвет текста */
+    font-size: 0.85vw;
+}
+
+.Gray-085vwHover {
+    color: rgba(128, 128, 128); /* Цвет текста */
+    font-size: 0.85vw;
+}
+
+.Gray-085vwHover:hover{
+    color: rgb(200, 0, 0); /* Цвет текста */
+}
+
+.Gray-1vw-Without-Animation {
+    color: rgba(128, 128, 128); /* Цвет текста */
+    font-size: 1vw;
+}
+
+.Gray-1vw:hover {
+    color: rgb(200, 0, 0); /* Цвет текста */
+}
+
+.Gray-1vw-absolute {
+    color: rgba(128, 128, 128, 0.5); /* Цвет текста */
+    font-size: 0.75vw;
+    position: absolute;
+    top: 62%;
+    left: 20%;
+    letter-spacing: 1px;
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8); /* Смещение по X, смещение по Y, размытие, цвет тени */
+}
+
+.background-color{
+    background-color: rgb(233, 233, 233);
+}
+
+.background-color-yellow {
+    background-color: rgb(255, 199, 32);
+}
+/*_Иконки_________________________________________________________________*/
+.Car {
+    color: rgb(200, 0, 0);
+    font-size: 16px;
+}
+
+.CarGray {
+    color: rgb(37, 129, 21);
+    font-size: 3vh;
+}
+
+.User {
+    font-size: 2vw;
+    background-image: linear-gradient(to top, rgb(82, 82, 82), rgb(131, 131, 131));
+    -webkit-background-clip: text; /* Обрезка фона по форме текста */
+    -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+}
+
+.Phone {
+    color: rgb(200, 0, 0);
+    font-size: 1.5vw;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+.Phone-White {
+    color: rgb(246, 246, 246);
+    font-size: 1.5vw;
+    position: absolute;
+    left: 4%;
+    top: 25%;
+}
+
+.Lock {
+    color: rgb(200, 0, 0);
+    font-size: 1.5vw;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+.Logo {
+    color: rgb(200, 0, 0);
+    position: absolute;
+    top: 32%;
+    right: 87%;
+    font-size: 3vw;
+}
+
+.Carta {
+    color: rgb(200, 0, 0);
+    position: absolute;
+    top: 25%;
+    right: 90%;
+    font-size: 1.5vw;
+}
+
+.Poiner {
+    cursor: pointer;
+}
+
+.Money {
+    font-size: 34px;
+    position: absolute;
+    left: 90%;
+    bottom: 50%;
+    background-image: linear-gradient(to top, rgb(255, 131, 0), rgb(255, 244, 0));
+    -webkit-background-clip: text; /* Обрезка фона по форме текста */
+    -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+    display: inline-block; /* Для корректного отображения */
+}
+
+.Step {
+    position: absolute;
+    background-image: linear-gradient(to top, rgb(255, 131, 0), rgb(255, 244, 0));
+    -webkit-background-clip: text; /* Обрезка фона по форме текста */
+    -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+    font-size: 2vw;
+    left: 5%;
+    top: 10%;
+}
+
+.write {
+    position: absolute;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(111, 3, 3));
+    -webkit-background-clip: text; /* Обрезка фона по форме текста */
+    -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+    font-size: 13vw;
+    left: 55%;
+    top: 20%;
+}
+
+/*_Image_________________________________________________________________*/
+
+.background-image {
+    background-size: cover; /* Масштабируем изображение для заполнения контейнера */
+    background-position: center; /* Центрируем изображение */
+    position: absolute;
+    object-fit: cover;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.small-image {
+    object-fit: cover;
+    margin: 0%;
+    padding: 0%;
+    height: 3vw;
+    overflow: hidden;
+}
+
+.small-image2vh {
+    object-fit: cover;
+    margin: 0%;
+    padding: 0%;
+  /*  border: 1px solid rgba(0, 0, 0, 0.5);*/
+    height: 2.5vw;
+    overflow: hidden;
+}
+
+.big-image25vh {
+    object-fit: cover;
+    margin: 0%;
+    padding: 0%;
+    /*  border: 1px solid rgba(0, 0, 0, 0.5);*/
+    height: 35vw;
+    overflow: hidden;
+}
+
+.Sell-Car-image {
+    object-fit: cover;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 30vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+

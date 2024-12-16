@@ -1,0 +1,332 @@
+﻿@{
+    Layout = "_Layout";
+
+}
+
+@model List<Auto>
+
+<div class="imgBMW">
+    <img src="~/image/бмв.png" alt="Описание изображения" class="background-image">
+    <div class="overlay"></div>
+    <div class="Upper">
+        <p class="flex-item White-2vw Upper">Выкупаем и продаем автомобили в кредит в Беларуси.<br>Комиссионная продажа. Свой паркинг.</p>
+        <p class="White-1vw Upper">
+            Добро пожаловать в автосалон REVO.by – компанию, где рады всем автовладельцам и их автомобилям! Приглашаем всех посетить наш офис и <br>
+            выставочный паркинг с машинами в наличии по адресу г. Могилев, ул. Ленинская 81 ( офис — первый уровень; осмотр автомобилей — пятый<br>
+            уровень). Время работы – с 10 утра до 6 вечера. Воскресенье — выходной. Всегда приятно вас видеть!
+        </p>
+
+        <div class="Line Upper">
+            <button class="my-button-main GrayBTN" onclick="location.href='@Url.Action("Privacy", "Home")'">
+                <p class="flex-item Black-1vw">Каталог автомобилий</p>
+            </button>
+
+            <button class="my-button-main RedBTN" onclick="location.href='@Url.Action("Company", "Home")'">
+                <p class="flex-item White-1vw">О компании</p>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="ColumConteinerMainIndex shadow">
+
+    <div class="Main-Line">
+        <img src="~/image/bmw-logo.png" alt="Описание изображения" class="small-image">
+        <img src="~/image/hyundai.png" alt="Описание изображения" class="small-image">
+        <img src="~/image/kia.png" alt="Описание изображения" class="small-image">
+        <img src="~/image/Mercedes-Logo.png" alt="Описание изображения" class="small-image">
+        <img src="~/image/pigo.png" alt="Описание изображения" class="small-image">
+        <img src="~/image/volva.png" alt="Описание изображения" class="small-image">
+        <img src="~/image/ford.png" alt="Описание изображения" class="small-image">
+        <img src="~/image/reno.png" alt="Описание изображения" class="small-image">
+        <img src="~/image/ww.png" alt="Описание изображения" class="small-image">
+    </div>
+
+    <div class="Line-1px "></div>
+
+    @{
+        int size = 0;
+        int secondCount = 0;
+        int thirthCount = 0;
+    }
+
+    <form method="POST">
+        <div class="Main-Line">
+
+            <div class="ColumForBtn">
+                <select class="my-input" id="MarkSelect" name="mark" onchange="updateModels()">
+                    <option value="">Любая марка</option>
+                    @for (var i = 0; i < Model.Count; i++)
+                    {
+                        bool checkReplace = true;
+
+                        for (int j = 0; j < i; j++)
+                        {
+                            if (Model[j].Make == Model[i].Make)
+                            {
+                                checkReplace = false;
+                            }
+                        }
+
+                        if (checkReplace)
+                        {
+                            <option value="@Model[i].Make">@Model[i].Make</option>
+                            secondCount++;
+                        }
+                    }
+                </select>
+
+                <select class="my-input" id="ModelSelect" name="model">
+                    <option value="">Любая модель</option>
+                </select>
+
+                <div class="Main-Line-Without-Pading">
+                    <select class="my-input" id="YearSelect" name="year" onchange="updateYear()">
+                        <option value="">Год от</option>
+                        @for (int i = 1980; i < 2025; i++)
+                        {
+                            <option value="@i">@i</option>
+                        }
+                    </select>
+
+                    <select class="my-input" id="YearSelectBefor" name="yearBefor">
+                        <option value="">До</option>
+                    </select>
+                </div>
+
+
+                <div class="Main-Line-Without-Pading">
+                    <select class="my-input" id="MoneySelect" onchange="updateMoney()" name="cost">
+                        <option value="">Цена от, USD</option>
+                        @for (int i = 1000; i < 100000; i += 1000)
+                        {
+                            <option value="@i">@i</option>
+                        }
+                    </select>
+
+                    <select class="my-input" id="MoneySelectBefore" name="costBefor">
+                        <option value="">До</option>
+                    </select>
+                </div>
+
+                <button class="my-button-Serch" type="submit">
+                    <p class="flex-item White-1vw">Показать авто</p>
+                </button>
+            </div>
+
+            @while (thirthCount != secondCount)
+            {
+                if (size == 21)
+                {
+                    break;
+                }
+                <ul class="no-bullets">
+                    @for (var i = thirthCount; i < Model.Count; i++)
+                    {
+                        int count = 0;
+                        bool checkReplace = true;
+
+                        for (var j = 0; j < Model.Count; j++)
+                        {
+                            if (Model[i].Make == Model[j].Make)
+                            {
+                                count++;
+                            }
+                        }
+
+                        for (int j = 0; j < i; j++)
+                        {
+                            if (Model[j].Make == Model[i].Make)
+                            {
+                                checkReplace = false;
+                            }
+                        }
+
+                        thirthCount++;
+
+                        if (checkReplace)
+                        {
+                            <li>
+                                <div class="LineForAbsolut">
+                                    <p class="Marka-Abs"><b>@Model[i].Make</b></p>
+                                    <p class="Marka-Count-Abs">@count</p>
+                                </div>
+                            </li>
+
+                            size++;
+
+                            if (size % 7 == 0)
+                            {
+                                break;
+                            }
+                        }
+                    }
+                </ul>
+            }
+        </div>
+    </form>
+</div>
+
+<div class="ColumConteinerMainIndex shadow">
+
+    <div class="Main-Line-Start">
+        <p class="flex-item-500 Black-2vw">Мы предлогаем</p>
+    </div>
+
+    <div class="Main-Line-Start">
+        @for (int i = 0; i < 4; i++)
+        {
+            <div class="ColumForSellAuto">
+                <img src="@Model[i].Photo" alt="Описание изображения" class="Sell-Car-image" />
+
+                <p class="flex-item Black-2vw">@Model[i].Make @Model[i].Model</p>
+
+                <p class="Black-1vw"> Цена: @Model[i].Price $</p>
+
+                <div class="Line-For-InfoCar background-color">
+                    <p class="Black-1vw">@Model[i].Year год, @String.Format("{0:0.0}", Model[i].EngineCapacity).Replace(",", "."), @Model[i].Mileage км, коробка @Model[i].Transmission.ToLower()</p>
+                </div>
+
+                <button class="my-button-Serch" onclick="location.href='@Url.Action("SeeCar", "Home", new {Make = @Model[i].Make, Model = @Model[i].Model,
+                    BodyType = @Model[i].BodyType, Year = @Model[i].Year, Price = @Model[i].Price, EngineType = @Model[i].EngineType,
+                    Drive = @Model[i].Drive, Transmission = @Model[i].Transmission,
+                    Description = @Model[i].Description, Mileage = @Model[i].Mileage, PhotoUrl = @Model[i].Photo, EngineCapacity = @String.Format("{0:0.0}", Model[i].EngineCapacity).Replace(",", ".")})'">
+                    <p class="flex-item White-1-3vw">от @Math.Truncate(Math.Pow(double.Parse(Model[i].Price.ToString()), 0.65)) р./м</p>
+                </button>
+            </div>
+        }
+    </div>
+    <div class="Main-Line">
+        <p class="Black-1vw-hover Poiner" onclick="location.href='@Url.Action("Privacy", "Home")'">Показать все</p>
+        <div class="Line-1px"></div>
+    </div>
+</div>
+
+<div class="ColumConteinerMain shadow">
+    <div class="Main-Line">
+        <p class="flex-item-500 Black-1-5vw">Как приобрести авто в кредит</p>
+    </div>
+
+    <div class="Main-Line">
+        <div class="ColumHowSell shadow">
+            <i class="fa-solid fa-1 Step"></i>
+            <p class="flex-item-500 Black-1-5vw">Выбираете автомобиль</p>
+            <p class="Black-1vw">Выбираете любой автомобиль на нашем портале, который вы хотите приобрести</p>
+        </div>
+
+        <div class="ColumHowSell shadow">
+            <i class="fa-solid fa-2 Step"></i>
+            <p class="flex-item-500 Black-1-5vw">Звонок менеджера</p>
+            <p class="Black-1vw">Оставляете online-заявку с выбранным автомобилем и наш менеджер свяжется с Вами в ближайшее время</p>
+        </div>
+
+        <div class="ColumHowSell shadow">
+            <i class="fa-solid fa-3 Step"></i>
+            <p class="flex-item-500 Black-1-5vw">Оформление сделки</p>
+            <p class="Black-1vw">Приезжаете к нам по указанному адресу для осмотра автомобиля и оформления сделки в офисе компании</p>
+        </div>
+    </div>
+</div>
+
+<div class="ColumConteinerMain">
+    <div class="Main-Line">
+        <p class="flex-item-500 Black-1vw">
+            Главная цель компании – собрать у себя машины мира на всевозможный вкус и потребности и предоставить закрытый цикл услуг по оформлению сделки, чтобы вы не тратили время на поиски информации или оформление документов. Наши авто в кредит – это продуманные условия, ориентированные на клиента. А вариант «в кредит без первоначального взноса» позволит вам выбрать свою машину уже сегодня.
+        </p>
+    </div>
+
+    <div class="Main-Line">
+        <p class="flex-item-500 Black-1vw">
+            Главная цель компании - собрать широкий ассортимент автомобилей со всего мира, отвечающих различным вкусам и потребностям, и предоставить замкнутый сервис для завершения сделки, чтобы клиентам не приходилось тратить время на поиск информации или заполнение документов. Наши варианты финансирования разработаны с учетом пожеланий клиента, а опция "без первоначального взноса" позволяет вам выбрать свой автомобиль уже сегодня.
+        </p>
+    </div>
+
+    <div class="Main-Line">
+        <p class="flex-item-500 Black-1vw">
+            Может показаться, что автомобильный рынок уже насыщен гигантами автомобильной промышленности, с вековой историей удивляющими нас новыми технологиями, безопасностью и растущим комфортом. Однако последние несколько десятилетий показали, что у рынка все еще есть возможности для роста и развития. Китайские автомобильные компании каждый день демонстрируют, что они также достойны внимания благодаря своему невероятному трудолюбию и настойчивости. Забота об окружающей среде требует от нас пересмотра предыдущих стандартов, что привело к появлению гибридов и электромобилей.
+        </p>
+    </div>
+
+
+
+</div>
+
+
+
+<script>
+    const cars = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model));
+
+    function updateModels() {
+        const carSelect = document.getElementById("MarkSelect");
+        const modelSelect = document.getElementById("ModelSelect");
+        const selectedMake = carSelect.value;
+
+        // Очищаем предыдущие модели
+        modelSelect.innerHTML = '<option value="">Любая модель</option>';
+
+        if (selectedMake) {
+
+            const uniqueModels = new Set();
+
+            // Ищем модели для выбранной марки
+            cars.forEach(car => {
+                if (car.Make === selectedMake) {
+                    uniqueModels.add(car.Model); // Добавляем модель в Set
+                }
+            });
+            // Ищем модели для выбранной марки
+
+            // Заполняем второй select
+            uniqueModels.forEach(function (model) {
+                const option = document.createElement("option");
+                option.value = model;
+                option.textContent = model;
+                modelSelect.appendChild(option);
+            });
+        }
+    }
+
+    function updateYear() {
+        const carSelect = document.getElementById("YearSelect");
+        const YearSelectBefor = document.getElementById("YearSelectBefor");
+        const selectedYear = carSelect.value;
+
+        // Очищаем предыдущие модели
+        YearSelectBefor.innerHTML = '<option value="">До</option>';
+
+        if (selectedYear) {
+            const uniqueModels = new Set();
+
+            // Заполняем список годов от выбранного года до 2025
+            for (let i = parseInt(selectedYear); i <= 2025; i++) {
+                const option = document.createElement("option");
+                option.value = i;
+                option.textContent = i;
+                YearSelectBefor.appendChild(option);
+            }
+        }
+    }
+
+    function updateMoney() {
+        const carSelect = document.getElementById("MoneySelect");
+        const MoneySelectBefor = document.getElementById("MoneySelectBefore");
+        const selectedMoney = carSelect.value;
+
+        // Очищаем предыдущие модели
+        MoneySelectBefor.innerHTML = '<option value="">До</option>';
+
+        if (selectedMoney) {
+            const uniqueModels = new Set();
+
+            // Заполняем список годов от выбранного года до 2025
+            for (let i = parseInt(selectedMoney); i <= 50000; i += 1000) {
+                const option = document.createElement("option");
+                option.value = i;
+                option.textContent = i;
+                MoneySelectBefor.appendChild(option);
+            }
+        }
+    }
+</script>

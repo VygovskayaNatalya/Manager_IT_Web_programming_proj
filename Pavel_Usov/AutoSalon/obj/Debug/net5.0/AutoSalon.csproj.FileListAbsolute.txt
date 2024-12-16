@@ -1,0 +1,201 @@
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\appsettings.json
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\AutoSalon.exe
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\AutoSalon.deps.json
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\AutoSalon.runtimeconfig.json
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\AutoSalon.runtimeconfig.dev.json
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\AutoSalon.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\AutoSalon.pdb
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\AutoSalon.Views.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\AutoSalon.Views.pdb
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.csproj.AssemblyReference.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.AssemblyInfoInputs.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.AssemblyInfo.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.csproj.CoreCompileInputs.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorAssemblyInfo.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorAssemblyInfo.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\scopedcss\bundle\AutoSalon.styles.css
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\staticwebassets\AutoSalon.StaticWebAssets.Manifest.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.TagHelpers.input.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.TagHelpers.output.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorCoreGenerate.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorTargetAssemblyInfo.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorTargetAssemblyInfo.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.Views.pdb
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\refint\AutoSalon.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.pdb
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.genruntimeconfig.cache
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\ref\AutoSalon.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\AutoSalon.csproj.CopyComplete
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\SeeCar.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\EntityFramework.SqlServer.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\EntityFramework.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.CodeDom.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Credit.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Leasing.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Company.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Contacts.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\application.json
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Cabinet.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Announcements.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\SubmitAds.cshtml.g.cs
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\SkiaSharp.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\shmat\OneDrive\Рабочий стол\4 курс\7 семестр\Курсач Павлик\AutoSalon\bin\Debug\net5.0\runtimes\win-x86\native\libSkiaSharp.dll
+D:\AutoSalon\bin\Debug\net5.0\appsettings.Development.json
+D:\AutoSalon\bin\Debug\net5.0\appsettings.json
+D:\AutoSalon\bin\Debug\net5.0\application.json
+D:\AutoSalon\bin\Debug\net5.0\AutoSalon.exe
+D:\AutoSalon\bin\Debug\net5.0\AutoSalon.deps.json
+D:\AutoSalon\bin\Debug\net5.0\AutoSalon.runtimeconfig.json
+D:\AutoSalon\bin\Debug\net5.0\AutoSalon.runtimeconfig.dev.json
+D:\AutoSalon\bin\Debug\net5.0\AutoSalon.dll
+D:\AutoSalon\bin\Debug\net5.0\AutoSalon.pdb
+D:\AutoSalon\bin\Debug\net5.0\AutoSalon.Views.dll
+D:\AutoSalon\bin\Debug\net5.0\AutoSalon.Views.pdb
+D:\AutoSalon\bin\Debug\net5.0\EntityFramework.SqlServer.dll
+D:\AutoSalon\bin\Debug\net5.0\EntityFramework.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\AutoSalon\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\AutoSalon\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\AutoSalon\bin\Debug\net5.0\SkiaSharp.dll
+D:\AutoSalon\bin\Debug\net5.0\System.CodeDom.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Drawing.Common.dll
+D:\AutoSalon\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Security.AccessControl.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Security.Permissions.dll
+D:\AutoSalon\bin\Debug\net5.0\System.Windows.Extensions.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\osx\native\libSkiaSharp.dylib
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-arm64\native\libSkiaSharp.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-x64\native\libSkiaSharp.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win-x86\native\libSkiaSharp.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\AutoSalon\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.csproj.AssemblyReference.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.GeneratedMSBuildEditorConfig.editorconfig
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.AssemblyInfoInputs.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.AssemblyInfo.cs
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.csproj.CoreCompileInputs.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.MvcApplicationPartsAssemblyInfo.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorAssemblyInfo.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorAssemblyInfo.cs
+D:\AutoSalon\obj\Debug\net5.0\scopedcss\bundle\AutoSalon.styles.css
+D:\AutoSalon\obj\Debug\net5.0\staticwebassets\AutoSalon.StaticWebAssets.Manifest.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.TagHelpers.input.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.TagHelpers.output.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorCoreGenerate.cache
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Announcements.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Cabinet.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Company.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Contacts.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Credit.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Leasing.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\SeeCar.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Home\SubmitAds.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorTargetAssemblyInfo.cache
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.RazorTargetAssemblyInfo.cs
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.Views.pdb
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.dll
+D:\AutoSalon\obj\Debug\net5.0\refint\AutoSalon.dll
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.pdb
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.genruntimeconfig.cache
+D:\AutoSalon\obj\Debug\net5.0\ref\AutoSalon.dll
+D:\AutoSalon\obj\Debug\net5.0\staticwebassets\AutoSalon.StaticWebAssets.Pack.cache
+D:\AutoSalon\obj\Debug\net5.0\staticwebassets\msbuild.AutoSalon.Microsoft.AspNetCore.StaticWebAssets.props
+D:\AutoSalon\obj\Debug\net5.0\staticwebassets\msbuild.build.AutoSalon.props
+D:\AutoSalon\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.AutoSalon.props
+D:\AutoSalon\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.AutoSalon.props
+D:\AutoSalon\obj\Debug\net5.0\AutoSalon.csproj.Up2Date

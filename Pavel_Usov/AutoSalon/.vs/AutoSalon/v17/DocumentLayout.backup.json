@@ -1,0 +1,229 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AutoSalon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\views\\home\\company.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:views\\home\\company.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\views\\home\\credit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:views\\home\\credit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\views\\home\\leasing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:views\\home\\leasing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\wwwroot\\lib\\jquery\\dist\\jquery.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:wwwroot\\lib\\jquery\\dist\\jquery.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\views\\home\\contacts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:views\\home\\contacts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\views\\home\\seecar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:views\\home\\seecar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\models\\cardbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:models\\cardbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|d:\\autosalon\\views\\home\\submitads.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F5FE812-B159-447C-9B24-2DE89D23FB60}|AutoSalon.csproj|solutionrelative:views\\home\\submitads.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Leasing.cshtml",
+              "DocumentMoniker": "D:\\AutoSalon\\Views\\Home\\Leasing.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Leasing.cshtml",
+              "ToolTip": "D:\\AutoSalon\\Views\\Home\\Leasing.cshtml",
+              "RelativeToolTip": "Views\\Home\\Leasing.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAhwBMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T12:08:37.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "jquery.js",
+              "DocumentMoniker": "D:\\AutoSalon\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\jquery\\dist\\jquery.js",
+              "ToolTip": "D:\\AutoSalon\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+              "RelativeToolTip": "wwwroot\\lib\\jquery\\dist\\jquery.js",
+              "ViewState": "AQIAAJYaAAAAAAAAAAAAAJYaAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T12:08:34.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SeeCar.cshtml",
+              "DocumentMoniker": "D:\\AutoSalon\\Views\\Home\\SeeCar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\SeeCar.cshtml",
+              "ToolTip": "D:\\AutoSalon\\Views\\Home\\SeeCar.cshtml",
+              "RelativeToolTip": "Views\\Home\\SeeCar.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAhwDIAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T12:06:49.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contacts.cshtml",
+              "DocumentMoniker": "D:\\AutoSalon\\Views\\Home\\Contacts.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Contacts.cshtml",
+              "ToolTip": "D:\\AutoSalon\\Views\\Home\\Contacts.cshtml",
+              "RelativeToolTip": "Views\\Home\\Contacts.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T12:06:24.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\AutoSalon\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\AutoSalon\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T12:04:09.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Credit.cshtml",
+              "DocumentMoniker": "D:\\AutoSalon\\Views\\Home\\Credit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Credit.cshtml",
+              "ToolTip": "D:\\AutoSalon\\Views\\Home\\Credit.cshtml",
+              "RelativeToolTip": "Views\\Home\\Credit.cshtml",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAhwFgAAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T12:03:32.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Company.cshtml",
+              "DocumentMoniker": "D:\\AutoSalon\\Views\\Home\\Company.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Company.cshtml",
+              "ToolTip": "D:\\AutoSalon\\Views\\Home\\Company.cshtml",
+              "RelativeToolTip": "Views\\Home\\Company.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T12:02:57.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\AutoSalon\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\AutoSalon\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAMUBAAAAAAAAAAAhwNUBAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T09:15:51.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SubmitAds.cshtml",
+              "DocumentMoniker": "D:\\AutoSalon\\Views\\Home\\SubmitAds.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\SubmitAds.cshtml",
+              "ToolTip": "D:\\AutoSalon\\Views\\Home\\SubmitAds.cshtml",
+              "RelativeToolTip": "Views\\Home\\SubmitAds.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:08:47.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\AutoSalon\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\AutoSalon\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAM0AAAAAAAAAAAAUwCoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T10:02:09.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "D:\\AutoSalon\\Models\\AppSettings.cs",
+              "RelativeDocumentMoniker": "Models\\AppSettings.cs",
+              "ToolTip": "D:\\AutoSalon\\Models\\AppSettings.cs",
+              "RelativeToolTip": "Models\\AppSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T10:01:53.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarDbContext.cs",
+              "DocumentMoniker": "D:\\AutoSalon\\Models\\CarDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\CarDbContext.cs",
+              "ToolTip": "D:\\AutoSalon\\Models\\CarDbContext.cs",
+              "RelativeToolTip": "Models\\CarDbContext.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T09:54:48.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\AutoSalon\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "D:\\AutoSalon\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBgAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T09:22:57.619Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

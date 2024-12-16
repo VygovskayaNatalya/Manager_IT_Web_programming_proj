@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\image\bmw-logo.png" />
+    <None Include="wwwroot\image\camry.png" />
+    <None Include="wwwroot\image\civic.png" />
+    <None Include="wwwroot\image\ford.png" />
+    <None Include="wwwroot\image\hyundai.png" />
+    <None Include="wwwroot\image\kia.png" />
+    <None Include="wwwroot\image\Mercedes-Logo.png" />
+    <None Include="wwwroot\image\mustang.png" />
+    <None Include="wwwroot\image\pigo.png" />
+    <None Include="wwwroot\image\reno.png" />
+    <None Include="wwwroot\image\volva.png" />
+    <None Include="wwwroot\image\ww.png" />
+    <None Include="wwwroot\image\x5.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
+    <PackageReference Include="SkiaSharp" Version="2.88.9" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.10" />
+  </ItemGroup>
+
+</Project>

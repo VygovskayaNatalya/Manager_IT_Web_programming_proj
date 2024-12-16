@@ -1,0 +1,170 @@
+﻿@{
+    Layout = "_Layout";
+
+    Random random = new Random();
+    int start = random.Next(0, Model.Count - 4);
+
+}
+
+@model List<Auto>
+
+<div class="ColumConteinerMainIndex">
+    <div class="Line-Logo margin-bottom0 padding-left6">
+        <p class="flex-item-400 Gray-085vw">
+            <u class="Gray-085vwHover Poiner" onclick="location.href='@Url.Action("Index", "Home")'">Главная</u> /
+            <u class="Gray-085vwHover Poiner" onclick="location.href='@Url.Action("Privacy", "Home")'">Легковые автомобили</u> /  @ViewBag.Make / @ViewBag.Model @ViewBag.Year @ViewBag.EngineType в Могилеве
+        </p>
+    </div>
+    <div class="Line-Logo margin-bottom0 padding-bottom0 padding-left6">
+        <p class="flex-item-500 Black-2vw">@ViewBag.Make @ViewBag.Model @ViewBag.EngineCapacity @ViewBag.Year @ViewBag.EngineType в Могилеве</p>
+    </div>
+
+    <div class="Line-Logo gap3 shadow">
+        <div class="ColumConteiner width60">
+            <img src="@ViewBag.PhotoUrl" alt="Описание изображения" class="big-image25vh">
+
+            <p class="flex-item-400 Black-095vw">
+                <br>@ViewBag.Description<br>В продажу поступил @ViewBag.Make @ViewBag.Model @ViewBag.Year года в хорошем состоянии.
+                Родной пробег @ViewBag.Mileage км, максимальная комплектация, ухоженный салон. Машина полностью обслужена.
+                Решили купить автомобиль нашей компании? Тогда у Вас есть возможность приобрести его в кредит!
+                Мы оформляем для Вас заявку на кредит и в случае положительного ответа от банка Вы покупаете
+                автомобиль в этот же день.<br>Автомобиль стоит на охраняемом паркинге, в недоступной зоне для дождя,
+                снега и ветра, что позволит Вам с комфортом осмотреть авто, не беспокоясь о погодных условиях
+                Кроме этого возможна комиссионная продажа, наша компания поможет Вам продать
+                Ваш автомобиль быстро, получить за него максимальную сумму денег, а главное освободит Ваше время.
+                Мойка, реклама и хранение - для Вас все полностью бесплатно! При оформлении сделки через нас,
+                мы гарантируем правильное и юридически верное оформление документов и их наличие. Trade-in.
+                Примем ваш авто в зачет при покупке любого автомобиля. Обмен Вашего авто на представленный в нашем
+                автосалоне. Вам не придется тратить свое драгоценное время, в течение часа Вы станете обладателем
+                нового автомобиля взамен на свой старый! Приезжайте на наш паркинг по адресу: г.Могилев
+                ул.Ленинская д.81 (офис - первый этаж)
+            </p>
+        </div>
+
+        <div class="ColumConteiner width40">
+            <div class="ColumHowSell width100 border-radius20 height20vh shadow align-items-center padding-left0 padding-right0 padding-bottom0 padding-top0">
+                <div class="Line-Logo height100 padding-left0 padding-right0 padding-bottom0 padding-top0">
+
+                    <div class="ColumConteinerMainIndex-Wite align-items-center justify-content-center width50">
+                        <p class="flex-item Black-08vw">Автомобиль компании</p>
+                        <p class="flex-item Gray-1vw"><i class="fa-solid fa-phone Red-1vw"></i> +375 (29) 335-47-29</p>
+                        <p class="flex-item Gray-1vw"><i class="fa-solid fa-phone Red-1vw"></i> +375 (33) 335-47-29</p>
+                    </div>
+
+                    <div class="ColumLine margin-top5"></div>
+
+                    <div class="ColumConteinerMainIndex-Wite align-items-center justify-content-center width50 right-align padding-right5">
+                        <p class="flex-item-500 Gray-085vw">
+                            г.Могилев
+                            ул.Ленинская<br>д.81
+                            (офис - первый этаж)
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="Line-Logo padding-left0 padding-right0 margin-top5 gap5 ">
+                <ul class="no-bullets">
+                    <li>
+                        <div class="LineForAbsolut width35vh">
+                            <p class="flex-item-500 Black-1vw Marka-Abs"><b>Год выпуска:</b></p>
+                            <p class="flex-item-500 Black-1vw Marka-Count-Abs">@ViewBag.Year</p>
+                        </div>
+                        <div class="LineForAbsolut width35vh">
+                            <p class="flex-item-500 Black-1vw Marka-Abs"><b>Кузов:</b></p>
+                            <p class="flex-item-500 Black-1vw Marka-Count-Abs">@ViewBag.BodyType</p>
+                        </div>
+                        <div class="LineForAbsolut width35vh">
+                            <p class="flex-item-500 Black-1vw Marka-Abs"><b>Двигатель:</b></p>
+                            <p class="flex-item-500 Black-1vw Marka-Count-Abs">@ViewBag.EngineType</p>
+                        </div>
+                        <div class="LineForAbsolut width35vh">
+                            <p class="flex-item-500 Black-1vw Marka-Abs"><b>Привод:</b></p>
+                            <p class="flex-item-500 Black-1vw Marka-Count-Abs">@ViewBag.Drive</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="no-bullets">
+                    <li>
+                        <div class="LineForAbsolut width35vh">
+                            <p class="flex-item-500 Black-1vw Marka-Abs"><b>Трансмиссия:</b></p>
+                            <p class="flex-item-500 Black-1vw Marka-Count-Abs">@ViewBag.Transmission</p>
+                        </div>
+                        <div class="LineForAbsolut width35vh">
+                            <p class="flex-item-500 Black-1vw Marka-Abs"><b>Пробег:</b></p>
+                            <p class="flex-item-500 Black-1vw Marka-Count-Abs">@ViewBag.Mileage км</p>
+                        </div>
+                        <div class="LineForAbsolut width35vh">
+                            <p class="flex-item-500 Black-1vw Marka-Abs"><b>Объем:</b></p>
+                            <p class="flex-item-500 Black-1vw Marka-Count-Abs">@ViewBag.EngineCapacity л</p>
+                        </div>
+                        <div class="LineForAbsolut width35vh">
+                            <p class="flex-item-500 Black-1vw Marka-Abs"><b>Цена:</b></p>
+                            <p class="flex-item-500 Black-1vw Marka-Count-Abs">@ViewBag.Price $</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <form asp-action="SendEmail" method="post">
+                <div class="ColumCall background-color-yellow height50vh width100 border-radius20">
+                    <p class="flex-item-500 Black-1-5vw">Оставить заявку</p>
+                    <p class="flex-item-300 Black-095vw">Если вам понравился авто,<br />оставте заявку,с вами свяжется<br /> менеджер в ближайшее время</p>
+
+                    <div class="input-container">
+                        <input type="text" id="subject" name="subject" class="input" placeholder=" " required>
+                        <label for="subject" class="input-label">Ваше имя</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="text" id="body" name="body" class="input" placeholder=" " required>
+                        <label for="body" class="input-label">+375</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="hidden" name="auto" value="@ViewBag.Make @ViewBag.Model @ViewBag.EngineCapacity @ViewBag.Year @ViewBag.EngineType">
+                    </div>
+
+                    <button type="submit" class="my-button-Serch width50" id="sendButton"><p class="flex-item-300 White-1vw">Записаться</p></button>
+
+                    <i class="fa-regular fa-pen-to-square write"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="ColumConteinerMainIndex">
+
+        <div class="Main-Line-Start">
+            <p class="flex-item-500 Black-2vw">Вас так же заинтересует</p>
+        </div>
+
+        <div class="Main-Line-Start">
+            @for (int i = start; i < start + 4; i++)
+            {
+                <div class="ColumForSellAuto">
+                    <img src="@Model[i].Photo" alt="Описание изображения" class="Sell-Car-image" />
+
+                    <p class="flex-item Black-2vw">@Model[i].Make @Model[i].Model</p>
+
+                    <p class="Black-1vw"> Цена: @Model[i].Price $</p>
+
+                    <div class="Line-For-InfoCar background-color">
+                        <p class="Black-1vw">@Model[i].Year год, @String.Format("{0:0.0}", Model[i].EngineCapacity).Replace(",", "."), @Model[i].Mileage км, коробка @Model[i].Transmission.ToLower()</p>
+                    </div>
+
+                    <button class="my-button-Serch" onclick="location.href='@Url.Action("SeeCar", "Home", new {Make = @Model[i].Make, Model = @Model[i].Model,
+                    BodyType = @Model[i].BodyType, Year = @Model[i].Year, Price = @Model[i].Price, EngineType = @Model[i].EngineType,
+                    Drive = @Model[i].Drive, Transmission = @Model[i].Transmission,
+                    Description = @Model[i].Description, Mileage = @Model[i].Mileage, PhotoUrl = @Model[i].Photo, EngineCapacity = @String.Format("{0:0.0}", Model[i].EngineCapacity).Replace(",", ".")})'">
+                        <p class="flex-item White-1-3vw">от @Math.Truncate(Math.Pow(double.Parse(Model[i].Price.ToString()), 0.65)) р./м</p>
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+
+

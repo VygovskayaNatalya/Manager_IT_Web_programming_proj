@@ -1,0 +1,95 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model List<Auto>;
+
+<div class="ColumConteinerMainIndex">
+    <div class="Line-Logo margin-bottom0 padding-left6">
+        <p class="flex-item-400 Gray-085vw">
+            <u class="Gray-085vwHover Poiner" onclick="location.href='@Url.Action("Index", "Home")'">Главная</u> / Мои объявления
+        </p>
+    </div>
+
+    <div class="Line-Logo shadow gap3">
+        <div class="ColumConteiner width25">
+            <div class="LineInfoName border-radius5">
+                <p class="flex-item Black-Lite-1-5vw"><i class="fa-solid fa-user User"></i> @ViewBag.Surname @ViewBag.Name</p>
+            </div>
+
+            <button class="my-button-Serch margin-top3" onclick="location.href='@Url.Action("SubmitAds", "Home")'">
+                <p class="flex-item White-1-3vw"><i class="fa-solid fa-car CarGray"></i> Подать объявления</p>
+            </button>
+
+            <table class="margin-top3">
+                <tbody>
+                    <tr>
+                        <td><p class="Red-1vw" onclick="location.href='@Url.Action("Announcements", "Home")'"><u>Мои объявления</u></p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="Red-1vw" onclick="location.href='@Url.Action("Cabinet", "Home")'"><u>Мой профиль</u></p></td>
+                    </tr>
+                    <tr>
+                        <form id="myForm" asp-action="ExitCabinet">
+                        <td><p class="Red-1vw" id="Exit" onclick="submitForm()"><u>Выход</u></p></td>
+                        </form>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ColumConteiner gap0 width75">
+            <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                <p class="flex-item Black-2vw">Мои объявления</p>
+            </div>
+
+            <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                <div class="Line-1px gap5 width100 margin-left0 margin-right0"></div>
+            </div>
+
+
+            <div class="Line-CarBy gap6">
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    if (Model[i].IdUser == int.Parse(ViewBag.IdUser.ToString()))
+                    {
+                        <div class="ColumForSellAuto width29 padding-left0 margin-bottom5">
+                            <img src="@Model[i].Photo" alt="Описание изображения" class="Sell-Car-image" />
+
+                            <p class="flex-item Black-2vw">@Model[i].Make @Model[i].Model</p>
+
+                            <p class="Black-1vw"> Цена: @Model[i].Price $</p>
+
+                            <div class="Line-For-InfoCar background-color">
+                                <p class="Black-1vw">@Model[i].Year год, @String.Format("{0:0.0}", Model[i].EngineCapacity).Replace(",", "."), @Model[i].Mileage км, коробка<br>@Model[i].Transmission.ToLower()</p>
+                            </div>
+
+                            <button class="my-button-Serch" onclick="location.href='@Url.Action("SeeCar", "Home", new {Make = @Model[i].Make, Model = @Model[i].Model,
+                                BodyType = @Model[i].BodyType, Year = @Model[i].Year, Price = @Model[i].Price, EngineType = @Model[i].EngineType,
+                                Drive  = @Model[i].Drive, Transmission  = @Model[i].Transmission,
+                                Description  = @Model[i].Description, Mileage  = @Model[i].Mileage, PhotoUrl  = @Model[i].Photo,EngineCapacity = @String.Format("{0:0.0}", Model[i].EngineCapacity).Replace(",", ".")})'">
+                                <p class="flex-item White-1-3vw">от @Math.Truncate(Math.Pow(double.Parse(Model[i].Price.ToString()), 0.65)) р./м</p>
+                            </button>
+
+                            <form asp-action="DeleteAuto" class="width100">
+                                <input hidden type="text" value="@Model[i].IdAuto" name="IdAuto">
+
+                                <button class="my-button-Delete">
+                                    <p class="flex-item White-1-3vw">Удалить</p>
+                                </button>
+                            </form>
+                        </div>
+                    }
+                }
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<script>
+    function submitForm() {
+        document.getElementById('myForm').submit();
+    }
+</script>
+

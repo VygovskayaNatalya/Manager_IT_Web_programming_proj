@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AutoSalon</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="ColumConteinerLayot">
+            <div class="LineConteinerLayotWhite">
+                <div class="ColumToLineConteinerLayotWhite">
+                    <p class="flex-item Black-2vw"><i class="fa-brands fa-slack Logo"></i> REVO.BY</p>
+                    <p class="flex-item Gray-1vw-absolute">АВТО В КРЕДИТ</p>
+                </div>
+                <div class="ColumToLineConteinerLayotWhite">
+                    <a href="https://yandex.by/maps/geo/53171667/?ll=32.041415%2C53.364220&z=12.53"> <p class="Red-1vw"><i class="fa-solid fa-location-dot Carta"></i><u>г.Могилев<br> ул.Ленинская д.81<br>(офис - первый этаж)</u></p></a>
+
+                </div>
+                <div class="ColumToLineConteinerLayotWhite">
+                    <p class="flex-item Gray-1vw Poiner">
+                        <i class="fa-solid fa-phone Red-1vw"></i> +375 (29) 335-47-29
+                    </p>
+                    <p class="flex-item Gray-1vw Poiner">
+                        <i class="fa-solid fa-phone Red-1vw"></i> +375 (33) 335-47-29
+                    </p>
+                </div>
+
+                <button class="my-button-Sell-Auto" id="open-modal">
+                    <i class="fa-solid fa-square-phone Phone"></i>
+                    <p class="flex-item-400 Gray-1vw-Without-Animation">
+                        Заказать звонок
+                    </p>
+                </button>
+                @{
+                    bool isLoggedIn = AppSettings.GetIsLoggedIn();
+
+                    if (isLoggedIn)
+                    {
+                        <button class="Autorithation" onclick="location.href='@Url.Action("Cabinet", "Home")'">
+                            <p><i class="fa-solid fa-user Lock"></i></p>
+                        </button>
+                    }
+                    else
+                    {
+                        <button class="Autorithation" id="open-modal2">
+                            <p><i class="fa-solid fa-lock Red-1-5vw Lock"></i></p>
+                        </button>
+                    }
+                }
+            </div>
+
+            <div class="LineConteinerLayotRed">
+                <div class="ColumToLineConteinerLayotRed" onclick="location.href='@Url.Action("Index", "Home")'">
+                    <p class="flex-item White-1vw">Главная</p>
+                </div>
+                <div class="ColumToLineConteinerLayotRed" onclick="location.href='@Url.Action("Privacy", "Home")'">
+                    <p class="flex-item White-1vw">Каталог авто</p>
+                </div>
+                <div class="ColumToLineConteinerLayotRed" onclick="location.href='@Url.Action("Credit", "Home")'">
+                    <p class="flex-item White-1vw">Кредит</p>
+                </div>
+                <div class="ColumToLineConteinerLayotRed" onclick="location.href='@Url.Action("Leasing", "Home")'">
+                    <p class="flex-item White-1vw">Лизинг</p>
+                </div>
+                <div class="ColumToLineConteinerLayotRed" onclick="location.href='@Url.Action("Company", "Home")'">
+                    <p class="flex-item White-1vw">О компании</p>
+                </div>
+                <div class="ColumToLineConteinerLayotRed" onclick="location.href='@Url.Action("Contacts", "Home")'">
+                    <p class="flex-item White-1vw">Контакты</p>
+                </div>
+
+
+                @{
+                    isLoggedIn = AppSettings.GetIsLoggedIn();
+
+                    if (isLoggedIn)
+                    {
+                        <button class="my-button" onclick="location.href='@Url.Action("SubmitAds", "Home")'">
+                            <p class="flex-item Black-1vw">
+                                <i class="fa-solid fa-car Car"></i>
+                                Продать авто
+                                <i class="fa-solid fa-file-invoice-dollar Money"></i>
+                            </p>
+                        </button>
+                    }
+                    else
+                    {
+                        <button class="my-button" id="noRegictr">
+                            <p class="flex-item Black-1vw">
+                                <i class="fa-solid fa-car Car"></i>
+                                Продать авто
+                                <i class="fa-solid fa-file-invoice-dollar Money"></i>
+                            </p>
+                        </button>
+                    }
+                }
+
+
+            </div>
+        </div>
+
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form asp-action="SendEmail" method="post">
+                    <div class="ColumCall background-color-yellow height50vh width60vh border-radius20">
+                        <p class="flex-item-500 Black-1-5vw">Консультация</p>
+                        <p class="flex-item-300 Black-095vw">
+                            Если у вас остались вопросы, <br>
+                            вы можете получить <br>консультацию у менеджера
+                        </p>
+
+                        <div class="input-container">
+                            <input type="text" id="subject" name="subject" class="input" placeholder=" " required>
+                            <label for="subject" class="input-label">Ваше имя</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" id="body" name="body" class="input" placeholder=" " required>
+                            <label for="body" class="input-label">+375</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="hidden" name="auto" value="консультация">
+                        </div>
+
+                        <button type="submit" class="my-button-Serch width50" id="sendButton"><p class="flex-item-300 White-1vw">Записаться</p></button>
+
+                        <i class="fa-solid fa-magnifying-glass write"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal2">
+            <div class="modal-content">
+                <span class="close2">&times;</span>
+                <div class="ColumCall2 border-radius20" id="Enter">
+                    <div class="Line-Logo padding-left0 gap3 margin-bottom5">
+                        <button class="my-button-Enter-Autorithation width20" id="colorBtn1" onclick="showTab('loginTab')"><p class="Black-1vw-hover">Вход</p></button>
+                        <button class="my-button-Enter-Autorithation width50" id="colorBtn2" onclick="showTab('registerTab')"><p class="Black-1vw-hover">Регистрация</p></button>
+                    </div>
+                    <div id="loginTab" class="tab active gap10 width100">
+                        <form asp-action="Autorization" method="post">
+                            <div class="Line-Logo margin-bottom5 width100 padding-left0">
+                                <input class="input width100" name="login" type="text" id="loginEmail" value="Логин" required>
+                            </div>
+                            <div class="Line-Logo margin-bottom5 width100 padding-left0">
+                                <input class="input width100" name="password" type="password" id="loginPassword" value="Пароль" required>
+                            </div>
+                            <button class="my-button-Enter-Autorithation2 margin-bottom5" onclick="login()"><p class="flex-item-500 White-1vw">Войти</p></button>
+                        </form>
+                       
+                    </div>
+
+                    <div id="registerTab" class="tab gap10 width100">
+                        <form asp-action="Registration" method="post">
+                        <div class="Line-Logo margin-bottom5 width100 padding-left0">
+                                <input class="input width100" name="Name" type="text" id="nameInput" value="Имя" required>
+                        </div>
+                        <div class="Line-Logo margin-bottom5 width100 padding-left0">
+                                <input class="input width100" name="Surname" type="text" id="lastNameInput" value="Фамилия" required>
+                        </div>
+                        <div class="Line-Logo margin-bottom5 width100 padding-left0">
+                                <input class="input width100" name="Patronymic" type="text" id="TirthNameInput" value="Отчество" required>
+                        </div>
+                        <div class="Line-Logo margin-bottom5 width100 padding-left0">
+                                <input class="input width100" name="Login" type="text" id="loginEmail2" value="Логин" required>
+                        </div>
+                        <div class="Line-Logo margin-bottom5 width100 padding-left0">
+                                <input class="input width100" name="Password" type="password" id="loginPassword2" value="Пароль" required>
+                        </div>
+
+                        <button class="my-button-Enter-Autorithation2 width35vh margin-bottom5" type="submit" onclick="login()"><p class="flex-item-500 White-1vw">Зарегистрироваться</p></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const btnSellAuto = document.querySelectorAll('.my-button-Sell-Auto');
+
+            btnSellAuto.forEach(container => {
+                const contentText = container.querySelector('.Gray-1vw-Without-Animation');
+                const icon = container.querySelector('.Phone');
+
+                container.addEventListener('mouseover', () => {
+                    container.style.backgroundColor = '#808080'; // Изменяем цвет фона
+                    contentText.style.color = '#F6F6F6'; // Меняем цвет текста на синий
+                    icon.style.color = '#F6F6F6';
+                });
+
+                container.addEventListener('mouseout', () => {
+                    container.style.backgroundColor = '#F6F6F6'; // Возвращаем цвет фона
+                    contentText.style.color = '#808080';; // Возвращаем цвет текста
+                    icon.style.color = '#C80000';
+                });
+            });
+
+
+            const lock = document.querySelectorAll('.Autorithation');
+
+            lock.forEach(container => {
+                const icon = container.querySelector('.Lock');
+
+                container.addEventListener('mouseover', () => {
+                    container.style.backgroundColor = '#808080'; // Изменяем цвет фона
+                    icon.style.color = '#F6F6F6';
+                });
+
+                container.addEventListener('mouseout', () => {
+                    container.style.backgroundColor = '#F6F6F6'; // Возвращаем цвет фона
+                    icon.style.color = '#C80000';
+                });
+            });
+
+        </script>
+
+        <script>
+            // Получаем элементы
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("open-modal");
+            var span = document.getElementsByClassName("close")[0];
+
+            // Когда пользователь нажимает кнопку, открываем модальное окно
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            var modal2 = document.getElementById("myModal2");
+            var btn2 = document.getElementById("open-modal2");
+            var span2 = document.getElementsByClassName("close2")[0];
+
+            // Когда пользователь нажимает кнопку, открываем модальное окно
+            btn2.onclick = function () {
+                modal2.style.display = "block";
+            }
+
+            span2.onclick = function () {
+                modal2.style.display = "none";
+            }
+
+            function showTab(tabId) {
+                const tabs = document.querySelectorAll('.tab');
+                tabs.forEach(tab => tab.classList.remove('active'));
+                document.getElementById(tabId).classList.add('active');
+            }
+        </script>
+
+        <script>
+            var btn1 = document.getElementById('colorBtn1');
+            btn1.style.backgroundColor = 'rgb(246, 224, 94)';
+
+            document.getElementById('colorBtn1').addEventListener('click', function () {
+                document.getElementById('colorBtn1').style.backgroundColor = 'rgb(246, 224, 94)';
+                document.getElementById('colorBtn2').style.backgroundColor = 'rgb(246, 246, 246)';
+                document.getElementById('Enter').style.height = '50vh';
+            });
+
+            document.getElementById('colorBtn2').addEventListener('click', function () {
+                document.getElementById('colorBtn1').style.backgroundColor = 'rgb(246, 246, 246)';
+                document.getElementById('colorBtn2').style.backgroundColor = 'rgb(246, 224, 94)';
+                document.getElementById('Enter').style.height = '90vh';
+            });
+        </script>
+
+        <script>
+            document.getElementById('loginEmail').addEventListener('focus', function () {
+                // Проверяем, если значение равно изначальному, сбрасываем его
+                if (this.value === 'Логин') {
+                    this.value = '';
+                }
+            });
+
+            document.getElementById('loginEmail').addEventListener('blur', function () {
+                // Если поле пустое при потере фокуса, восстанавливаем исходное значение
+                if (this.value === '') {
+                    this.value = 'Логин';
+                }
+            });
+
+            document.getElementById('loginPassword').addEventListener('focus', function () {
+                // Проверяем, если значение равно изначальному, сбрасываем его
+                if (this.value === 'Пароль') {
+                    this.value = '';
+                }
+            });
+
+            document.getElementById('loginPassword').addEventListener('blur', function () {
+                // Если поле пустое при потере фокуса, восстанавливаем исходное значение
+                if (this.value === '') {
+                    this.value = 'Пароль';
+                }
+            });
+
+            document.getElementById('loginEmail2').addEventListener('focus', function () {
+                // Проверяем, если значение равно изначальному, сбрасываем его
+                if (this.value === 'Логин') {
+                    this.value = '';
+                }
+            });
+
+            document.getElementById('loginEmail2').addEventListener('blur', function () {
+                // Если поле пустое при потере фокуса, восстанавливаем исходное значение
+                if (this.value === '') {
+                    this.value = 'Логин';
+                }
+            });
+
+            document.getElementById('loginPassword2').addEventListener('focus', function () {
+                // Проверяем, если значение равно изначальному, сбрасываем его
+                if (this.value === 'Пароль') {
+                    this.value = '';
+                }
+            });
+
+            document.getElementById('loginPassword2').addEventListener('blur', function () {
+                // Если поле пустое при потере фокуса, восстанавливаем исходное значение
+                if (this.value === '') {
+                    this.value = 'Пароль';
+                }
+            });
+
+
+
+            document.getElementById('nameInput').addEventListener('focus', function () {
+                // Проверяем, если значение равно изначальному, сбрасываем его
+                if (this.value === 'Имя') {
+                    this.value = '';
+                }
+            });
+
+            document.getElementById('nameInput').addEventListener('blur', function () {
+                // Если поле пустое при потере фокуса, восстанавливаем исходное значение
+                if (this.value === '') {
+                    this.value = 'Имя';
+                }
+            });
+
+
+            document.getElementById('lastNameInput').addEventListener('focus', function () {
+                // Проверяем, если значение равно изначальному, сбрасываем его
+                if (this.value === 'Фамилия') {
+                    this.value = '';
+                }
+            });
+
+            document.getElementById('lastNameInput').addEventListener('blur', function () {
+                // Если поле пустое при потере фокуса, восстанавливаем исходное значение
+                if (this.value === '') {
+                    this.value = 'Фамилия';
+                }
+            });
+
+
+            document.getElementById('TirthNameInput').addEventListener('focus', function () {
+                // Проверяем, если значение равно изначальному, сбрасываем его
+                if (this.value === 'Отчество') {
+                    this.value = '';
+                }
+            });
+
+            document.getElementById('TirthNameInput').addEventListener('blur', function () {
+                // Если поле пустое при потере фокуса, восстанавливаем исходное значение
+                if (this.value === '') {
+                    this.value = 'Отчество';
+                }
+            });
+        </script>
+
+          <script>
+            document.getElementById('inRegictr').addEventListener('click', function () {
+                alert("Вы вошли в аккаунт");
+            });
+          </script>
+
+        <script>
+            document.getElementById('noRegictr').addEventListener('click', function () {
+                alert("Войдите в аккаунт");
+            });
+        </script>
+
+    </header>
+
+    <div class="ColumConteinerMain">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="ConteinerDowmColum">
+        <div class="LineWhite shadow">
+            <p class="flex-item-500 Black-1-5vw">Остались вопросы?</p>
+            <button class="btn_Phone" id="open-modal-down"><i class="fa-solid fa-square-phone Phone-White"></i> <p class="Black-1vw">Заказать звонок</p></button>
+
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form asp-action="SendEmail" method="post">
+                        <div class="ColumCall background-color-yellow height50vh width60vh border-radius20">
+                            <p class="flex-item-500 Black-1-5vw">Консультация</p>
+                            <p class="flex-item-300 Black-095vw">
+                                Если у вас остались вопросы, <br>
+                                вы можете получить <br>консультацию у менеджера
+                            </p>
+
+                            <div class="input-container">
+                                <input type="text" id="subject" name="subject" class="input" placeholder=" " required>
+                                <label for="subject" class="input-label">Ваше имя</label>
+                            </div>
+
+                            <div class="input-container">
+                                <input type="text" id="body" name="body" class="input" placeholder=" " required>
+                                <label for="body" class="input-label">+375</label>
+                            </div>
+
+                            <div class="input-container">
+                                <input type="hidden" name="auto" value="консультация">
+                            </div>
+
+                            <button type="submit" class="my-button-Serch width50" id="sendButton"><p class="flex-item-300 White-1vw">Записаться</p></button>
+
+                            <i class="fa-solid fa-magnifying-glass write"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="LineGray">
+            <div class="ColumToLineConteinerLayotGray">
+                <p class="flex-item Black-2vw"><i class="fa-brands fa-slack Logo"></i> REVO.BY</p>
+                <p class="flex-item Gray-1vw-absolute">Авто в кредит</p>
+            </div>
+
+            <div class="ColumToLineConteinerLayotGray" onclick="location.href='@Url.Action("Index", "Home")'">
+                <p class="flex-item Black-1vw-hover Poiner">Главная</p>
+            </div>
+            <div class="ColumToLineConteinerLayotGray" onclick="location.href='@Url.Action("Credit", "Home")'">
+                <p class="flex-item Black-1vw-hover Poiner">Кредит</p>
+            </div>
+            <div class="ColumToLineConteinerLayotGray" onclick="location.href='@Url.Action("Leasing", "Home")'">
+                <p class="flex-item Black-1vw-hover Poiner">Лизинг</p>
+            </div>
+            <div class="ColumToLineConteinerLayotGray" onclick="location.href='@Url.Action("Company", "Home")'">
+                <p class="flex-item Black-1vw-hover Poiner">О компании</p>
+            </div>
+            <div class="ColumToLineConteinerLayotGray" onclick="location.href='@Url.Action("Contacts", "Home")'">
+                <p class="flex-item Black-1vw-hover Poiner">Контакты</p>
+            </div>
+
+        </div>
+
+        <div class="LineDarkGray">
+            <div class="ColumToLineConteinerLayotDarkGray">
+                <p class="LightGray-1vw">г.Могилев<br> ул.Ленинская д.81<br>(офис - первый этаж)</p>
+
+                <div class="LineDarkGrayMess">
+                    <i class="fa-brands fa-vk White-2vw Poiner"></i>
+                    <i class="fa-brands fa-instagram White-2vw Poiner"></i>
+                    <i class="fa-brands fa-facebook White-2vw Poiner"></i>
+                </div>
+            </div>
+
+            <div class="ColumToLineConteinerLayotDarkGray">
+                <p class="flex-item Gray-1vw Poiner">
+                    <i class="fa-solid fa-phone Red-1vw"></i> +375 (29) 335-47-29
+                </p>
+                <p class="flex-item Gray-1vw Poiner">
+                    <i class="fa-solid fa-phone Red-1vw"></i> +375 (33) 335-47-29
+                </p>
+            </div>
+
+            <div class="ColumToLineConteinerLayotDarkGray">
+                <p class="flex-item LightGray-1vw">Отдел продаж:</p>
+
+                <div class="LineDarkGrayDay">
+                    <div class="Day">
+                        <p class="Black-08vw">ПН</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">ВТ</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">СР</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">ЧТ</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">ПТ</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">СБ</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">ВС</p>
+                    </div>
+                </div>
+
+                <p class="LightGray-1vw">
+                    с 10:00 - 18:00<br />
+                    Без обеда и выходных
+                </p>
+            </div>
+
+            <div class="ColumToLineConteinerLayotDarkGray">
+                <p class="flex-item LightGray-1vw">Отдел обслуживания:</p>
+
+                <div class="LineDarkGrayDay">
+                    <div class="Day">
+                        <p class="Black-08vw">ПН</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">ВТ</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">СР</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">ЧТ</p>
+                    </div>
+                    <div class="Day">
+                        <p class="Black-08vw">ПТ</p>
+                    </div>
+                    <div class="DayDark">
+                        <p class="White-08vw">СБ</p>
+                    </div>
+                    <div class="DayDark">
+                        <p class="White-08vw">ВС</p>
+                    </div>
+                </div>
+
+                <p class="LightGray-1vw">
+                    с 9:00 - 20:00<br />
+                    Обед 14:00 - 15:00
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="flex-item-400 Gray-075vw">&copy; 2024 - AutoSalon - Продажа, выкуп и обмен | УНП paylusha </p>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+    <script>
+        // Получаем элементы
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("open-modal-down");
+        var span = document.getElementsByClassName("close")[0];
+
+        // Когда пользователь нажимает кнопку, открываем модальное окно
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // Когда пользователь нажимает на (x), закрываем модальное окно
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Когда пользователь кликает в любом месте вне модального окна, закрываем его
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

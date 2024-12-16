@@ -1,0 +1,222 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="ColumConteinerMainIndex">
+    <div class="Line-Logo margin-bottom0 padding-left6">
+        <p class="flex-item-400 Gray-085vw">
+            <u class="Gray-085vwHover Poiner" onclick="location.href='@Url.Action("Index", "Home")'">Главная</u> / Подать объявления
+        </p>
+    </div>
+
+    <div class="Line-Logo shadow gap3">
+        <div class="ColumConteiner width25">
+            <div class="LineInfoName border-radius5">
+                <p class="flex-item Black-Lite-1-5vw"><i class="fa-solid fa-user User"></i> @ViewBag.Surname @ViewBag.Name</p>
+            </div>
+
+            <button class="my-button-Serch margin-top3" onclick="location.href='@Url.Action("SubmitAds", "Home")'">
+                <p class="flex-item White-1-3vw"><i class="fa-solid fa-car CarGray"></i> Подать объявления</p>
+            </button>
+
+            <table class="margin-top3">
+                <tbody>
+                    <tr>
+                        <td><p class="Red-1vw" onclick="location.href='@Url.Action("Announcements", "Home")'"><u>Мои объявления</u></p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="Red-1vw" onclick="location.href='@Url.Action("Cabinet", "Home")'"><u>Мой профиль</u></p></td>
+                    </tr>
+                    <tr>
+                        <form id="myForm" asp-action="ExitCabinet">
+                        <td><p class="Red-1vw" id="Exit" onclick="submitForm()"><u>Выход</u></p></td>
+                        </form>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ColumConteiner gap0 width75">
+            <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                <p class="flex-item-500 Black-2vw">Подать объявления</p>
+            </div>
+
+            <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                <div class="Line-1px gap5 width100 margin-left0 margin-right0"></div>
+            </div>
+
+            <form asp-action="SubmitAds" method="post" enctype="multipart/form-data">
+                <div class="Line-Logo gap3 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Марка</b></label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Make" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Модель</b></label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Model" type="text" id="Surname" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 margin-top0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Год выпуска</b></label>
+                        <select class="my-input width100 margin-bottom0 padding-left0 padding-right0 padding-left0" name="Year" onchange="updateModels()">
+                            <option value="">Год</option>
+                            @for (double i = 1980; i < 2025; i++)
+                            {
+                                <option value="@i">@i</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Тип кузова</b></label>
+                        <select class="my-input width100 margin-bottom0 padding-left0 padding-right0 padding-left0" name="BodyType" onchange="updateModels()">
+                            <option value="Не указан">Тип кузова</option>
+                            <option value="Внедорожник">внедорожник</option>
+                            <option value="Кабриолет">кабриолет</option>
+                            <option value="Купе">купе</option>
+                            <option value="Лимузин">лимузин</option>
+                            <option value="Лифтбек">лифтбек</option>
+                            <option value="Микроавтобус">микроавтобус</option>
+                            <option value="Минивэн">минивэн</option>
+                            <option value="Пикап">пикап</option>
+                            <option value="Родстер">родстер</option>
+                            <option value="Седан">седан</option>
+                            <option value="Универсал">универсал</option>
+                            <option value="Хэтчбек">хэтчбек</option>
+                            <option value="Фургон">фургон</option>
+                            <option value="Кроссовер">кроссовер</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="LineInfoName width100 height50vh border-radius5 margin-top5">
+                    <label class="file-upload-label" id="fileUploadLabel" for="fileUpload">Загрузить фото</label>
+                    <input type="file" id="fileUpload" name="Photo" class="file-upload" onchange="updateLabel()" accept=".jpg,.jpeg,.png" />
+                </div>
+
+
+                <div class="Line-Logo gap5 width100 margin-bottom0 margin-top3 padding-bottom0 padding-left0">
+                    <p class="flex-item-500 Black-2vw">Храктеристики</p>
+                </div>
+
+                <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="Line-1px gap5 width100 margin-left0 margin-right0"></div>
+                </div>
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 margin-top0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Тип двигателя</b></label>
+                        <select class="my-input width100 margin-bottom0 padding-left0 padding-right0 padding-left0" name="EngineType" onchange="updateModels()">
+                            <option value="Не указан">Тип двигателя</option>
+                            <option value="Бензин">бензин</option>
+                            <option value="Дизель">дизель</option>
+                            <option value="Электро">электро</option>
+                            <option value="Гибрид">гибрид</option>
+                            <option value="Метан">метан</option>
+                            <option value="Газ">газ</option>
+                            <option value="Пропан-бутан">пропан-бутан</option>
+                        </select>
+                    </div>
+
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Привод</b></label>
+                        <select class="my-input width100 margin-bottom0 padding-left0 padding-right0 padding-left0" name="Drive" onchange="updateModels()">
+                            <option value="Не указан">Привод</option>
+                            <option value="Передний">передний</option>
+                            <option value="Задний">задний</option>
+                            <option value="Полный">полный</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 margin-top0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Тип трансмисии</b></label>
+                        <select class="my-input width100 margin-bottom0 padding-left0 padding-right0 padding-left0" name="Transmission" onchange="updateModels()">
+                            <option value="Не указана">Трансмисия</option>
+                            <option value="Механическая">механическая</option>
+                            <option value="Автоматическая">автоматическая</option>
+                        </select>
+                    </div>
+
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Объем двигателя</b></label>
+                        <select class="my-input width100 margin-bottom0 padding-left0 padding-right0 padding-left0" name="EngineCapacity" onchange="updateModels()">
+                            <option value="Не указан">Объем двигателя</option>
+                            @for (double i = 1; i < 4; i = i + 0.1)
+                            {
+                                <option value="@String.Format("{0:0.0}", i)">@String.Format("{0:0.0}", i)</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Пробег</b></label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Mileage" type="text" id="nameInput" required>
+                            <span style="position: absolute; right: 10px; top: 17px;"><p class="flex-item-500 Black-Lite-1-5vw">КМ</p></span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Цена</b></label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Price" type="text" id="nameInput" required>
+                            <span style="position: absolute; right: 10px; top: 17px;"><p class="flex-item-500 Black-Lite-1-5vw">USD</p></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0"><b>Описание</b></label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <textarea class="input width100 height20vh" name="Description" placeholder="Введите текст здесь..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="Line-1px gap5 width100 margin-left0 margin-right0"></div>
+                </div>
+
+                <button class="my-button-Enter-Autorithation2 width25vh margin-top2" type="submit"><p class="flex-item White-1vw">Подать объявления</p></button>
+            </form>
+
+            <script>
+                function updateLabel() {
+                    const input = document.getElementById('fileUpload');
+                    const label = document.getElementById('fileUploadLabel');
+
+                    if (input.files.length > 0) {
+                        label.textContent = 'Файл загружен'; // Меняем текст метки
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</div>
+
+<script>
+    function submitForm() {
+        document.getElementById('myForm').submit();
+    }
+</script>
+

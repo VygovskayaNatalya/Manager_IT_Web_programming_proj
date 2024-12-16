@@ -1,0 +1,120 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model Users;
+
+<div class="ColumConteinerMainIndex">
+    <div class="Line-Logo margin-bottom0 padding-left6">
+        <p class="flex-item-400 Gray-085vw">
+            <u class="Gray-085vwHover Poiner" onclick="location.href='@Url.Action("Index", "Home")'">Главная</u> / Личный кабинет
+        </p>
+    </div>
+
+    <div class="Line-Logo shadow gap3">
+        <div class="ColumConteiner width25">
+            <div class="LineInfoName border-radius5">
+                <p class="flex-item Black-Lite-1-5vw"><i class="fa-solid fa-user User"></i> @Model.Surname @Model.Name</p>
+            </div>
+
+            <button class="my-button-Serch margin-top3" onclick="location.href='@Url.Action("SubmitAds", "Home")'">
+                <p class="flex-item White-1-3vw"><i class="fa-solid fa-car CarGray"></i> Подать объявления</p>
+            </button>
+
+            <table class="margin-top3">
+                <tbody>
+                    <tr>
+                        <td><p class="Red-1vw" onclick="location.href='@Url.Action("Announcements", "Home")'"><u>Мои объявления</u></p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="Red-1vw" onclick="location.href='@Url.Action("Cabinet", "Home")'"><u>Мой профиль</u></p></td>
+                    </tr>
+                    <tr>
+                        <form id="myForm" asp-action="ExitCabinet">
+                        <td><p class="Red-1vw" id="Exit" onclick="submitForm()"><u>Выход</u></p></td>
+                        </form>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ColumConteiner gap0 width75">
+            <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                <p class="flex-item Black-2vw">Личный кабинет</p>
+            </div>
+
+            <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                <div class="Line-1px gap5 width100 margin-left0 margin-right0"></div>
+            </div>
+
+            <form asp-action="UpdateUser" method="post">
+                <div class="Line-Logo gap3 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0">Ваше Имя</label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Name" type="text" id="nameInput" value="@Model.Name" required>
+                        </div>
+                    </div>
+
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0">Ваше Фамилия</label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Surname" type="text" id="Surname" value="@Model.Surname" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 margin-top0 padding-bottom0 padding-left0">
+
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0">Выше Отчество</label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Patronymic" type="text" id="Patronymic" value="@Model.Patronymic" required>
+                        </div>
+                    </div>
+
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0">Ваш логин</label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Login" type="text" id="Login" value="@Model.Login" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="Line-1px gap5 width100 margin-left0 margin-right0"></div>
+                </div>
+
+                <div class="Line-Logo gap3 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0">Новый пароль</label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Password" type="password" id="nameInput" required>
+                        </div>
+                    </div>
+
+                    <div class="ColumConteiner width100">
+                        <label class="margin-bottom0">Новый пароль ещё раз</label>
+                        <div class="Line-Logo width100 margin-bottom0 padding-left0 padding-right0 padding-left0">
+                            <input class="input width100" name="Password2" type="password" id="Surname" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Line-Logo gap5 width100 margin-bottom0 padding-bottom0 padding-left0">
+                    <div class="Line-1px gap5 width100 margin-left0 margin-right0"></div>
+                </div>
+
+                <button class="my-button-Enter-Autorithation2 width25vh margin-top2" type="submit"><p class="flex-item White-1vw">Сохранить изменения</p></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function submitForm() {
+        document.getElementById('myForm').submit();
+    }
+</script>
+
